@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intake Portal | GOLS</title>
+    <title>Contact | GOLS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,61 +11,65 @@
         <div class="nav-container">
             <a href="index.html" class="logo">GOLS<span>.</span></a>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À Propos</a>
                 <a href="services.html">Services</a>
                 <a href="linguistica-lab.html">Linguistica Lab</a>
-                <a href="contact.html" class="active cta-btn">Intake Portal</a>
+                <a href="contact.html" class="active cta-btn">Contact</a>
             </nav>
         </div>
     </header>
 
     <main class="wrapper" style="max-width: 800px;">
         <div class="card" style="padding: 4rem;">
-            <h1 class="mb-2" style="font-size: 2.2rem;">Initialize a Project</h1>
-            <p style="color: var(--text-muted); margin-bottom: 3rem;">Submit your documentation parameters or language acquisition goals below. We will review the scope and reply within 24 hours.</p>
+            <h1 class="mb-2" style="font-size: 2.2rem;">Initialiser un Projet</h1>
+            <p style="color: var(--text-muted); margin-bottom: 3rem;">Soumettez vos documents pour traduction ou vos objectifs d'apprentissage ci-dessous. Nous examinerons votre demande et vous répondrons dans les plus brefs délais.</p>
 
-            <!-- Web3Forms Secure Endpoint -->
             <form action="https://api.web3forms.com/submit" method="POST">
                 
-                <!-- REPACE THIS WITH YOUR WEB3FORMS KEY -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS_ICI">
                 
-                <input type="hidden" name="subject" value="New GOLS Client Inquiry">
+                <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
                 <input type="checkbox" name="botcheck" style="display: none;">
 
                 <div class="form-group">
-                    <label for="name">Full Name / Organization</label>
+                    <label for="name">Nom Complet / Organisation</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
+                    <label for="email">Adresse E-mail</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="service">Service Required</label>
+                    <label for="service">Service Requis</label>
                     <select id="service" name="service" style="width: 100%; padding: 1rem; background: var(--bg-dark); border: 1px solid var(--border-color); border-radius: 8px; color: #fff; font-family: inherit;">
-                        <option value="Sworn Translation">Sworn Translation (French/Creole)</option>
-                        <option value="Language Coaching">Language Acquisition Track</option>
-                        <option value="AI Pedagogy">AI Pedagogy Consulting</option>
-                        <option value="Other">Other Inquiry</option>
+                        <option value="Traduction de Documents">Traduction de Documents (Actes, Diplômes, etc.)</option>
+                        <option value="Cours de Langues">Cours de Langues</option>
+                        <option value="Cours Techniques">Cours Techniques (IA / Bureautique)</option>
+                        <option value="Services Linguistiques">Relecture / Consultation</option>
+                        <option value="Autre">Autre Demande</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Project Scope & Timeline</label>
+                    <label for="message">Détails du Projet ou Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
 
-                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Transmit Request</button>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Envoyer la Demande</button>
             </form>
+            
+            <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                <p style="color: var(--text-muted); font-size: 0.9rem;"><strong>📍 Siège Social :</strong> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;"><strong>📞 WhatsApp :</strong> +509 4838-2252</p>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Garden of Languages and services (GOLS). All rights reserved globally.</p>
+        <p>&copy; 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
     </footer>
 </body>
 </html>
