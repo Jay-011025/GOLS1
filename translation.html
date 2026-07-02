@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Traduction Officielle | GOLS</title>
+    <meta name="description" content="Services de traduction certifiée de documents officiels et administratifs à Gonaïves.">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Logo GOLS" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <span class="logo-text">GOLS</span>
+            </a>
+            <nav class="nav-links" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À Propos</a>
+                <a href="services.html">Services</a>
+                <a href="courses.html">Cours</a>
+                <a href="translation.html" class="active" aria-current="page">Traduction</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/50948382252" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer le thème">◐</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container" style="max-w: 900px;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <span class="section-label">Fidélité Textuelle</span>
+                    <h1 style="margin-block: 1rem 1.5rem;">Traduction Certifiée & Légale de Documents</h1>
+                    <p style="font-size: 1.15rem; color: var(--color-text-muted);">Un traitement rigoureux supervisé par notre expert-traducteur agréé.</p>
+                </div>
+
+                <div class="intro-grid" style="margin-bottom: 4rem;">
+                    <div class="intro-copy">
+                        <h2>Précision morphosémantique et conformité administrative</h2>
+                        <p>Nous assurons la transposition stricte et certifiée de vos pièces officielles pour vos démarches académiques, consulaires, migratoires ou juridiques.</p>
+                        <p style="margin-top: 1rem;">Chaque document est analysé manuellement pour garantir une parité contextuelle irréprochable avec le texte source.</p>
+                    </div>
+                    <div class="intro-panel">
+                        <p class="intro-panel-title">Documents pris en charge :</p>
+                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
+                            <li style="border: none; background: none; padding: 0;">Actes de naissance & mariage</li>
+                            <li style="border: none; background: none; padding: 0;">Diplômes & Relevés de notes</li>
+                            <li style="border: none; background: none; padding: 0;">Extraits d'archives & Actes légaux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem;">Demander un devis de traduction</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="footer-title">Garden of Languages and Services</h3>
+                <address>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti</address>
+            </div>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Légal</h4>
+                <a href="privacy-policy.html">Confidentialité</a>
+                <a href="terms-of-service.html">Conditions</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+          const root = document.documentElement;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          let savedTheme = localStorage.getItem("gols-theme");
+          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          root.setAttribute("data-theme", theme);
+          if (toggle) {
+            toggle.addEventListener("click", function () {
+              theme = theme === "dark" ? "light" : "dark";
+              root.setAttribute("data-theme", theme);
+              localStorage.setItem("gols-theme", theme);
+            });
+          }
+        })();
+    </script>
+</body>
+</html>
