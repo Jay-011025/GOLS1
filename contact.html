@@ -3,117 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | GOLS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Contact | Garden of Languages and Services</title>
+    <meta name="description" content="Contactez GOLS pour initialiser votre projet de traduction, vos cours de langues ou vos formations techniques.">
+    
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- HEADER -->
+    <header class="site-header">
         <div class="nav-container">
-            <img src="logo.jpg" alt="Logo GOLS" style="max-height: 80px; width: auto; display: block;">
-</a>
+            <a href="index.html" class="logo">
+                <div class="logo-circle">G</div>
+                <span class="logo-text">GOLS</span>
+            </a>
+            
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
                 <a href="services.html">Services</a>
-             <!-- <a href="linguistica-lab.html">Linguistica Lab</a> -->
-                <a href="contact.html" class="active cta-btn">Contact</a>
+                <a href="courses.html">Cours</a>
+                <a href="translation.html">Traduction</a>
+                <a href="contact.html" class="active cta-nav-btn">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="wrapper" style="max-width: 800px;">
-        <div class="card" style="padding: 4rem;">
-            <h1 class="mb-2" style="font-size: 2.2rem;">Initialiser un Projet</h1>
-            <p style="color: var(--text-muted); margin-bottom: 3rem;">Soumettez vos documents pour traduction ou vos objectifs d'apprentissage ci-dessous. Nous examinerons votre demande et vous répondrons dans les plus brefs délais.</p>
-
-            <form action="https://api.web3forms.com/submit" method="POST">
+    <main>
+        <!-- CONTACT SECTION -->
+        <!-- Added extra top padding to account for the fixed header -->
+        <section class="contact-section" style="padding-top: 140px; padding-bottom: 100px; min-height: 80vh;">
+            <div class="wrapper contact-grid">
                 
-                <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
-                
-                <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
-                <input type="checkbox" name="botcheck" style="display: none;">
+                <!-- Left Column: Information -->
+                <div class="contact-text">
+                    <span class="section-label">Contact & Devis</span>
+                    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 20px;">Initialiser un Projet</h1>
+                    <p style="font-size: 1.1rem; margin-bottom: 40px;">
+                        Soumettez vos documents pour traduction ou vos objectifs d'apprentissage ci-dessous. Notre équipe examinera votre demande avec soin et vous répondra dans les plus brefs délais avec une orientation sur mesure.
+                    </p>
 
-                <div class="form-group">
-                    <label for="name">Nom Complet / Organisation</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="contact-info" style="background: var(--bg-main); padding: 30px; border-radius: var(--radius-md); border: 1px solid var(--border);">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Nos Coordonnées</h3>
+                        <p style="margin-bottom: 12px;"><strong><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 8px;"></i> Siège Social :</strong><br> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                        <p style="margin-bottom: 12px;"><strong><i class="fa-brands fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> WhatsApp :</strong><br> <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">+509 4838 2252</a></p>
+                        <p><strong><i class="fa-solid fa-envelope" style="color: var(--accent); margin-right: 8px;"></i> Email :</strong><br> <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a></p>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Adresse E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Numéro de Téléphone (WhatsApp inclus)</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
-                </div>
+                <!-- Right Column: The Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    
+                    <!-- Web3Forms Hidden Inputs -->
+                    <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
+                    <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
+                    <input type="checkbox" name="botcheck" style="display: none;">
 
-                <div class="form-group">
-                    <label for="service">Service Requis</label>
-                    <select id="service" name="service" style="width: 100%; padding: 1rem; background: var(--bg-dark); border: 1px solid var(--border-color); border-radius: 8px; color: #fff; font-family: inherit;">
-                        <option value="Traduction de Documents">Traduction de Documents (Actes de naissance, relevé de notes, Diplômes, etc.)</option>
-                        <option value="Cours de Langues">Cours de Langues</option>
-                        <option value="Cours Techniques">Cours Techniques (IA / Bureautique)</option>
-                        <option value="Services Linguistiques">Relecture / Consultation</option>
-                        <option value="Autre">Autre Demande</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="name">Nom Complet / Organisation</label>
+                        <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+                    </div>
 
-                <div class="form-group">
-                    <label for="message">Détails du Projet ou Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Adresse E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Numéro de Téléphone (WhatsApp inclus)</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
+                    </div>
 
-                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Envoyer la Demande</button>
-            </form>
-            <p class="form-note">
-  En soumettant ce formulaire, vous acceptez que GOLS utilise vos informations
-  uniquement pour répondre à votre demande. Consultez notre
-  <a href="privacy-policy.html">Politique de confidentialité</a>.
-</p>
-            
-            <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-                <p style="color: var(--text-muted); font-size: 0.9rem;"><strong>📍 Siège Social :</strong> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-                <p style="color: var(--text-muted); font-size: 0.9rem;"><strong>📞 WhatsApp :</strong> +509 4838-2252</p>
+                    <div class="form-group">
+                        <label for="service">Service Requis</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Sélectionnez un service...</option>
+                            <option value="Traduction de Documents">Traduction de Documents (Actes, Diplômes, etc.)</option>
+                            <option value="Cours de Langues">Cours de Langues</option>
+                            <option value="Cours Techniques">Cours Techniques (IA / Bureautique)</option>
+                            <option value="Services Linguistiques">Relecture / Consultation Linguistique</option>
+                            <option value="Autre">Autre Demande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Détails du Projet ou Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Veuillez décrire vos besoins, vos objectifs ou la nature des documents à traduire..."></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer la Demande</button>
+
+                    <p class="form-note">
+                        <i class="fa-solid fa-shield-halved"></i> En soumettant ce formulaire, vous acceptez que GOLS utilise vos informations uniquement pour répondre à votre demande. Consultez notre <a href="privacy-policy.html">Politique de confidentialité</a>.
+                    </p>
+                </form>
             </div>
-        </div>
+        </section>
     </main>
 
-      <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Garden of Languages and Services</h3>
-      <p>Apprendre • Comprendre • Communiquer</p>
-      <p>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-    </div>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="wrapper footer-grid">
+            <div class="footer-brand">
+                <h3>GOLS</h3>
+                <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+            </div>
 
-    <div>
-      <h4>Services</h4>
-      <a href="courses.html">Cours de langues</a>
-      <a href="courses.html">Formations techniques</a>
-      <a href="translation.html">Traduction de documents</a>
-      <a href="services.html">Relecture et consultation</a>
-    </div>
+            <div class="footer-links">
+                <h4>Nos Services</h4>
+                <a href="courses.html">Cours de langues</a>
+                <a href="courses.html">Formations techniques</a>
+                <a href="translation.html">Traduction de documents</a>
+                <a href="services.html">Relecture et consultation</a>
+            </div>
 
-    <div>
-      <h4>Contact</h4>
-      <a href="https://wa.me/50948382252" target="_blank">WhatsApp: +509 4838 2252</a>
-      <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a>
-      <a href="mailto:eden26fevrier@gmail.com">eden26fevrier@gmail.com</a>
-    </div>
+            <div class="footer-contact">
+                <h4>Contactez-nous</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            </div>
 
-    <div>
-      <h4>Informations</h4>
-      <a href="about.html">À propos</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Politique de confidentialité</a>
-      <a href="terms-of-service.html">Conditions d’utilisation</a>
-    </div>
-  </div>
+            <div class="footer-info">
+                <h4>Légal & Info</h4>
+                <a href="about.html">À propos de nous</a>
+                <a href="privacy-policy.html">Politique de confidentialité</a>
+                <a href="terms-of-service.html">Conditions d’utilisation</a>
+            </div>
+        </div>
 
-  <div class="container footer-bottom">
-    <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
-  </div>
+        <div class="wrapper footer-bottom">
+            <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>
