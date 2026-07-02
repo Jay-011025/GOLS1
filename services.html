@@ -3,90 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | GOLS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Services | Garden of Languages and Services</title>
+    <meta name="description" content="Découvrez nos solutions structurelles pour l'acquisition rapide de compétences linguistiques, techniques et la traduction de documents.">
+    
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- HEADER -->
+    <header class="site-header">
         <div class="nav-container">
-            <img src="logo.jpg" alt="Logo GOLS" style="max-height: 80px; width: auto; display: block;">
-</a>
+            <a href="index.html" class="logo">
+                <div class="logo-circle">G</div>
+                <span class="logo-text">GOLS</span>
+            </a>
+            
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
                 <a href="services.html" class="active">Services</a>
-            <!-- <a href="linguistica-lab.html">Linguistica Lab</a> -->
-                <a href="contact.html" class="cta-btn">Contact</a>
+                <a href="courses.html">Cours</a>
+                <a href="translation.html">Traduction</a>
+                <a href="contact.html" class="cta-nav-btn">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="wrapper">
-        <h1 class="mb-2 text-center" style="font-size: 2.5rem;">Nos Domaines d'Expertise</h1>
-        <p class="text-center" style="color: var(--text-muted); max-width: 600px; margin: 0 auto 4rem;">Des solutions structurelles pour l'acquisition rapide de compétences et la gestion de vos documents officiels.</p>
+    <main>
+        <!-- SERVICES INTRO SECTION -->
+        <section class="detailed-services" style="padding-top: 140px; padding-bottom: 80px;">
+            <div class="wrapper">
+                <div class="section-header">
+                    <span class="section-label">Nos Domaines d'Expertise</span>
+                    <h2>Des solutions structurelles pour l'acquisition rapide de compétences.</h2>
+                    <p>Et la gestion légale et certifiée de vos documents officiels.</p>
+                </div>
 
-        <div class="grid">
-            <div class="card" style="border-top: 4px solid var(--accent-emerald);">
-                <h3>Cours de Langues</h3>
-                <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Apprenez. Communiquez. Ouvrez le monde.</p>
-                <p>Programmes d'acquisition linguistique ciblant : le Créole Haïtien, le Français, l'Espagnol, l'Anglais et le Catalan.</p>
-            </div>
-            
-            <div class="card" style="border-top: 4px solid #3b82f6;">
-                <h3>Cours Techniques</h3>
-                <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Compétences essentielles pour l'avenir.</p>
-                <p>Formation pratique et avancée en Intelligence Artificielle (IA) et maîtrise complète de l'Informatique Bureautique.</p>
-            </div>
+                <!-- SERVICES GRID -->
+                <div class="services-grid" style="margin-top: 50px;">
+                    
+                    <!-- Card 1: Cours de Langues -->
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <h3>Cours de Langues</h3>
+                        <p style="font-weight: 700; color: var(--primary); margin-bottom: 12px;">Apprenez. Communiquez. Ouvrez le monde.</p>
+                        <p>Programmes d'acquisition linguistique ciblant : le Créole Haïtien, le Français, l'Espagnol, l'Anglais et le Catalan.</p>
+                        <a href="courses.html" class="card-button" style="margin-top: 20px;">Voir les cours</a>
+                    </article>
 
-            <div class="card" style="border-top: 4px solid #8b5cf6;">
-                <h3>Services Linguistiques</h3>
-                <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Des textes clairs, soignés et sans fautes.</p>
-                <p>Services professionnels de relecture et de correction. Consultation linguistique offrant des conseils et solutions adaptés à vos projets.</p>
-            </div>
+                    <!-- Card 2: Cours Techniques -->
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Cours Techniques</h3>
+                        <p style="font-weight: 700; color: var(--primary); margin-bottom: 12px;">Compétences essentielles pour l'avenir.</p>
+                        <p>Formation pratique et avancée en Intelligence Artificielle (IA) et maîtrise complète de l'Informatique Bureautique.</p>
+                        <a href="courses.html" class="card-button" style="margin-top: 20px;">Voir les formations</a>
+                    </article>
 
-            <div class="card" style="border-top: 4px solid #f59e0b;">
-                <h3>Traduction de Documents</h3>
-                <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Supervisé par un expert-traducteur.</p>
-                <p>Traduction légale et certifiée de vos documents : actes de naissance, actes de mariage, actes de décès, actes de divorce, extraits d'archives, diplômes et relevés de notes, etc.</p>
+                    <!-- Card 3: Services Linguistiques -->
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Services Linguistiques</h3>
+                        <p style="font-weight: 700; color: var(--primary); margin-bottom: 12px;">Des textes clairs, soignés et sans fautes.</p>
+                        <p>Services professionnels de relecture et de correction. Consultation linguistique offrant des conseils et solutions adaptés à vos projets.</p>
+                    </article>
+
+                    <!-- Card 4: Traduction -->
+                    <article class="service-card highlighted">
+                        <div class="service-icon"><i class="fa-solid fa-file-signature" style="color: white;"></i></div>
+                        <h3>Traduction de Documents</h3>
+                        <p style="font-weight: 700; color: white; margin-bottom: 12px;">Supervisé par un expert-traducteur.</p>
+                        <p style="color: rgba(255,255,255,0.9);">Traduction légale et certifiée de vos documents : actes de naissance, mariage, décès, divorce, extraits d'archives, diplômes et relevés de notes.</p>
+                        <a href="translation.html" class="card-button" style="background: white; color: var(--primary); margin-top: 20px;">Service de Traduction</a>
+                    </article>
+
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- CALL TO ACTION (CTA) SECTION -->
+        <section class="cta-section">
+            <div class="wrapper cta-box">
+                <div>
+                    <h2>Prêt à démarrer votre projet ?</h2>
+                    <p>Réservez une consultation ou demandez un devis pour nos services de traduction dès aujourd'hui.</p>
+                </div>
+                <a href="contact.html" class="cta-button" style="background: white; color: var(--primary);">
+                    <i class="fa-solid fa-envelope"></i> Nous Contacter
+                </a>
+            </div>
+        </section>
     </main>
 
-       <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Garden of Languages and Services</h3>
-      <p>Apprendre • Comprendre • Communiquer</p>
-      <p>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-    </div>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="wrapper footer-grid">
+            <div class="footer-brand">
+                <h3>GOLS</h3>
+                <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+            </div>
 
-    <div>
-      <h4>Services</h4>
-      <a href="courses.html">Cours de langues</a>
-      <a href="courses.html">Formations techniques</a>
-      <a href="translation.html">Traduction de documents</a>
-      <a href="services.html">Relecture et consultation</a>
-    </div>
+            <div class="footer-links">
+                <h4>Nos Services</h4>
+                <a href="courses.html">Cours de langues</a>
+                <a href="courses.html">Formations techniques</a>
+                <a href="translation.html">Traduction de documents</a>
+                <a href="services.html">Relecture et consultation</a>
+            </div>
 
-    <div>
-      <h4>Contact</h4>
-      <a href="https://wa.me/50948382252" target="_blank">WhatsApp: +509 4838 2252</a>
-      <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a>
-      <a href="mailto:eden26fevrier@gmail.com">eden26fevrier@gmail.com</a>
-    </div>
+            <div class="footer-contact">
+                <h4>Contactez-nous</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            </div>
 
-    <div>
-      <h4>Informations</h4>
-      <a href="about.html">À propos</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Politique de confidentialité</a>
-      <a href="terms-of-service.html">Conditions d’utilisation</a>
-    </div>
-  </div>
+            <div class="footer-info">
+                <h4>Légal & Info</h4>
+                <a href="about.html">À propos de nous</a>
+                <a href="privacy-policy.html">Politique de confidentialité</a>
+                <a href="terms-of-service.html">Conditions d’utilisation</a>
+            </div>
+        </div>
 
-  <div class="container footer-bottom">
-    <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
-  </div>
+        <div class="wrapper footer-bottom">
+            <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>
