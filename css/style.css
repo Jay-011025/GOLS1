@@ -62,7 +62,7 @@ p {
   font-size: 1rem;
 }
 
-/* Navigation improvement */
+/* Navigation */
 header {
   position: sticky;
   top: 0;
@@ -84,13 +84,15 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   margin-left: 24px;
+  transition: color 0.2s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: var(--accent);
 }
 
-/* About */
+/* About Section */
 .about-section {
   background: var(--white);
 }
@@ -124,8 +126,9 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
+/* Trust Section */
 .trust-section {
-  background: #ffffff;
+  background: var(--white);
   padding: 90px 0;
 }
 
@@ -138,23 +141,22 @@ nav a:hover {
 
 .trust-card {
   padding: 28px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 
 .trust-card h3 {
-  color: #123c69;
+  color: var(--primary);
   margin-bottom: 10px;
 }
 
 .trust-card p {
-  color: #64748b;
+  color: var(--muted);
 }
 
-/*testimonials-section*/
-
+/* Testimonials Section */
 .testimonials-section {
   background: #f1f5f9;
   padding: 90px 0;
@@ -168,10 +170,10 @@ nav a:hover {
 }
 
 .testimonial-card {
-  background: #ffffff;
+  background: var(--white);
   padding: 32px;
-  border-radius: 18px;
-  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 
@@ -186,13 +188,14 @@ nav a:hover {
 
 .testimonial-author strong {
   display: block;
-  color: #123c69;
+  color: var(--primary);
 }
 
 .testimonial-author span {
-  color: #64748b;
+  color: var(--muted);
   font-size: 0.9rem;
 }
+
 /* Services */
 .detailed-services {
   background: #f1f5f9;
@@ -258,9 +261,14 @@ nav a:hover {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
+  transition: background 0.2s ease;
 }
 
-/* Why section */
+.card-button:hover {
+  background: #e09355;
+}
+
+/* Why Section */
 .why-section {
   background: var(--white);
 }
@@ -332,6 +340,7 @@ nav a:hover {
 .cta-box h2,
 .cta-box p {
   color: var(--white);
+  margin: 0;
 }
 
 .cta-button {
@@ -343,6 +352,11 @@ nav a:hover {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 800;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
 }
 
 /* FAQ */
@@ -436,27 +450,27 @@ summary {
   font-weight: 800;
   cursor: pointer;
   font-size: 1rem;
+  transition: background 0.2s ease;
 }
 
 .contact-form button:hover {
   background: #0f2f54;
 }
 
-/*form-note*/
 .form-note {
   font-size: 0.88rem;
-  color: #64748b;
+  color: var(--muted);
   margin-top: 14px;
 }
 
 .form-note a {
-  color: #2a9d8f;
+  color: var(--accent);
   font-weight: 700;
 }
 
-/*legal-page*/
+/* Legal Page */
 .legal-page {
-  background: #ffffff;
+  background: var(--white);
   padding: 90px 0;
 }
 
@@ -465,13 +479,13 @@ summary {
 }
 
 .legal-container h1 {
-  color: #123c69;
+  color: var(--primary);
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   margin-bottom: 16px;
 }
 
 .legal-container h2 {
-  color: #123c69;
+  color: var(--primary);
   font-size: 1.35rem;
   margin-top: 36px;
 }
@@ -481,15 +495,14 @@ summary {
 }
 
 .legal-container a {
-  color: #2a9d8f;
+  color: var(--accent);
   font-weight: 700;
 }
 
-/*site-footer*/
-
+/* Site Footer */
 .site-footer {
   background: #0f172a;
-  color: #ffffff;
+  color: var(--white);
   padding: 60px 0 24px;
 }
 
@@ -501,7 +514,7 @@ summary {
 
 .site-footer h3,
 .site-footer h4 {
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 16px;
 }
 
@@ -515,10 +528,11 @@ summary {
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
+  transition: color 0.2s ease;
 }
 
 .site-footer a:hover {
-  color: #f4a261;
+  color: var(--secondary);
 }
 
 .footer-bottom {
@@ -528,40 +542,24 @@ summary {
   text-align: center;
 }
 
-/* Footer improvement */
-footer {
-  background: #0f172a;
-  color: var(--white);
-  padding: 36px 0;
-  text-align: center;
-}
-
-footer p,
-footer a {
-  color: #cbd5e1;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-/* Mobile */
+/* Mobile Media Queries */
 @media (max-width: 900px) {
   .about-grid,
-  .contact-grid,
-  .cta-box {
+  .contact-grid {
     grid-template-columns: 1fr;
-    display: grid;
   }
 
   .services-grid,
   .why-grid,
-  .process-grid {
+  .process-grid,
+  .trust-grid,
+  .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
 
   .cta-box {
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -581,7 +579,10 @@ footer a {
 
   .services-grid,
   .why-grid,
-  .process-grid {
+  .process-grid,
+  .trust-grid,
+  .testimonials-grid,
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
