@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <title>GOLS | Garden of Languages and Services</title>
-    
     <meta name="description" content="Garden of Languages and Services offre des cours de langues, des formations techniques, des services de traduction, de relecture et de consultation linguistique à Gonaïves, Haïti.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,8 +20,8 @@
     <header class="site-header">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="Logo GOLS" style="max-height: 70px; width: auto;">
-                <span class="logo-text">Garden of Languages and Services</span>
+                <div class="logo-circle">G</div>
+                <span class="logo-text">GOLS</span>
             </a>
             
             <nav class="nav-links">
@@ -25,49 +30,65 @@
                 <a href="services.html">Services</a>
                 <a href="courses.html">Cours</a>
                 <a href="translation.html">Traduction</a>
-                <a href="contact.html" class="cta-btn">Contact</a>
+                <a href="contact.html" class="cta-nav-btn">Contact</a>
             </nav>
-
-            <a href="https://wa.me/50948382252" class="nav-cta" target="_blank" rel="noopener noreferrer">
-                WhatsApp
-            </a>
         </div>
     </header>
 
-    <main class="wrapper">
+    <main>
         <section class="hero">
-            <h2 style="color: var(--accent-emerald); font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px;">FORMER LES ESPRITS • RELIER LES CULTURES • SERVIR AVEC EXCELLENCE</h2>
-            <h1>Votre passerelle vers le <br><span style="color: var(--accent-emerald);">savoir et la réussite</span></h1>
-            <p>Des formations et services linguistiques de haute qualité, rigoureusement adaptés à vos besoins académiques et professionnels.</p>
-            <a href="services.html" class="btn">Explorer nos services</a>
+            <div class="hero-content">
+                <span class="hero-badge">Former • Relier • Servir</span>
+                <h1>Votre passerelle vers le <br><span class="text-gradient">savoir et la réussite</span></h1>
+                <p>Des formations et services linguistiques de haute qualité, rigoureusement adaptés à vos besoins académiques et professionnels à Gonaïves.</p>
+                
+                <div class="hero-actions">
+                    <a href="services.html" class="btn btn-primary">Explorer nos services</a>
+                    <a href="https://wa.me/50948382252" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Discuter sur WhatsApp
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section class="grid">
-            <div class="card">
-                <h3 style="color: var(--accent-emerald);">Cours de Langues & Techniques</h3>
-                <p>Maîtrisez le Créole Haïtien, le Français, l'Espagnol, l'Anglais et le Catalan. Développez également des compétences essentielles en Intelligence Artificielle (IA) et en Informatique Bureautique.</p>
+        <section class="services-section wrapper">
+            <div class="section-header">
+                <h2>Notre Expertise</h2>
+                <p>Des solutions complètes pour votre développement personnel et professionnel.</p>
             </div>
-            <div class="card">
-                <h3 style="color: var(--accent-emerald);">Traduction de Documents</h3>
-                <p>Traduction certifiée avec expert-traducteur pour tous vos documents officiels : actes de naissance, actes de mariage, diplômes, relevés de notes et extraits d'archives.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent-emerald);">Services Linguistiques</h3>
-                <p>Relecture et correction approfondies pour des textes clairs et sans fautes, accompagnées de consultations linguistiques sur mesure pour vos projets de communication.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <h3>Cours de Langues & IA</h3>
+                    <p>Maîtrisez le Créole Haïtien, le Français, l'Espagnol, l'Anglais et le Catalan. Développez des compétences essentielles en Intelligence Artificielle et Informatique.</p>
+                </div>
+                
+                <div class="card featured-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Traduction Certifiée</h3>
+                    <p>Traduction officielle avec expert-traducteur pour tous vos documents : actes de naissance, mariages, diplômes, relevés de notes et archives.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Services Linguistiques</h3>
+                    <p>Relecture et correction approfondies pour des textes clairs et sans fautes, accompagnées de consultations sur mesure pour vos projets.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <h3>Garden of Languages and Services</h3>
-                <p>Apprendre • Comprendre • Communiquer</p>
-                <p>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+        <div class="wrapper footer-grid">
+            <div class="footer-brand">
+                <h3>GOLS</h3>
+                <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
             </div>
 
             <div class="footer-links">
-                <h4>Services</h4>
+                <h4>Nos Services</h4>
                 <a href="courses.html">Cours de langues</a>
                 <a href="courses.html">Formations techniques</a>
                 <a href="translation.html">Traduction de documents</a>
@@ -75,22 +96,20 @@
             </div>
 
             <div class="footer-contact">
-                <h4>Contact</h4>
-                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">WhatsApp: +509 4838 2252</a>
-                <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a>
-                <a href="mailto:eden26fevrier@gmail.com">eden26fevrier@gmail.com</a>
+                <h4>Contactez-nous</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
             </div>
 
             <div class="footer-info">
-                <h4>Informations</h4>
-                <a href="about.html">À propos</a>
-                <a href="contact.html">Contact</a>
+                <h4>Légal & Info</h4>
+                <a href="about.html">À propos de nous</a>
                 <a href="privacy-policy.html">Politique de confidentialité</a>
                 <a href="terms-of-service.html">Conditions d’utilisation</a>
             </div>
         </div>
 
-        <div class="container footer-bottom">
+        <div class="wrapper footer-bottom">
             <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
         </div>
     </footer>
