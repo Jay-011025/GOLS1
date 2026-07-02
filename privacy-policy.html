@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,125 +7,184 @@
     
     <title>Politique de confidentialité | Garden of Languages and Services</title>
     <meta name="description" content="Politique de confidentialité et de gestion des données personnelles de Garden of Languages and Services (GOLS).">
+    <meta name="theme-color" content="#01696f">
     
-    <!-- Google Fonts for premium typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Liens Typographiques Privilégiés (Satoshi & Boska) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome for Professional Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Link to your main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-    <!-- HEADER (Matched across all pages) -->
+    <!-- En-tête de Navigation Institutionnel Unifié -->
     <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-circle">G</div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+                <img src="logo.jpg" alt="Logo de Garden of Languages and Services" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
                 <span class="logo-text">GOLS</span>
             </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
                 <a href="services.html">Services</a>
                 <a href="courses.html">Cours</a>
                 <a href="translation.html">Traduction</a>
-                <a href="contact.html" class="cta-nav-btn">Contact</a>
             </nav>
+
+            <div class="nav-actions">
+                <a
+                  href="https://wa.me/50948382252"
+                  class="nav-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contacter GOLS sur WhatsApp"
+                >
+                  WhatsApp
+                </a>
+
+                <button
+                  type="button"
+                  class="theme-toggle"
+                  data-theme-toggle
+                  aria-label="Changer le thème"
+                  title="Changer le thème"
+                >
+                  <span aria-hidden="true">◐</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <!-- LEGAL CONTENT SECTION -->
-        <section class="legal-page" style="padding-top: 140px; padding-bottom: 80px;">
-            <div class="wrapper legal-container">
-                <h1><i class="fa-solid fa-shield-halved" style="color: var(--accent); margin-right: 12px;"></i>Politique de confidentialité</h1>
-                <p style="color: var(--text-muted); font-style: italic; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 20px;">Dernière mise à jour : 2026</p>
+    <main id="main-content">
+        <!-- Section Contenu Légal Éditorial -->
+        <section class="section legal-page">
+            <div class="container" style="max-w: 800px;">
+                
+                <div style="margin-bottom: 3rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1.5rem;">
+                    <h1 style="display: flex; align-items: center; gap: 1rem; font-size: clamp(2.2rem, 5vw, 3.2rem);">
+                        <i class="fa-solid fa-shield-halved" style="color: var(--color-primary); font-size: 0.85em;"></i>
+                        Politique de confidentialité
+                    </h1>
+                    <p style="color: var(--color-text-faint); font-style: italic; margin-top: 1rem; font-size: 0.95rem;">
+                        Dernière mise à jour : 2026
+                    </p>
+                </div>
 
-                <h2>1. Introduction</h2>
-                <p>
-                    Garden of Languages and Services, aussi appelé GOLS, respecte la confidentialité des visiteurs, étudiants, clients et partenaires. Cette politique explique comment nous collectons, utilisons et protégeons les informations transmises à travers notre site web.
-                </p>
+                <div style="display: grid; gap: 2.5rem; color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.7;">
+                    
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">1. Introduction</h2>
+                        <p>Garden of Languages and Services, aussi appelé GOLS, respecte la confidentialité des visiteurs, étudiants, clients et partenaires. Cette politique explique de manière transparente comment nous collectons, utilisons et protégeons les informations transmises à travers notre plateforme web.</p>
+                    </div>
 
-                <h2>2. Informations collectées</h2>
-                <p>
-                    Nous pouvons collecter les informations suivantes lorsque vous remplissez un formulaire ou nous contactez directement : nom, adresse email, numéro de téléphone, type de service demandé, message envoyé et documents fournis volontairement pour un service.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">2. Informations collectées</h2>
+                        <p>Nous pouvons collecter les données suivantes lorsque vous complétez un formulaire d’inscription ou de contact : votre nom complet, votre adresse de courrier électronique, votre numéro de téléphone, le type de service linguistique requis, ainsi que l'ensemble des documents ou textes que vous choisissez de nous soumettre volontairement pour l'exécution d'un service.</p>
+                    </div>
 
-                <h2>3. Utilisation des informations</h2>
-                <p>
-                    Les informations collectées servent uniquement à répondre à vos demandes, fournir nos services, communiquer avec vous, préparer une formation, traiter une demande de traduction ou améliorer la qualité de notre accompagnement.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">3. Utilisation des informations</h2>
+                        <p>Les informations recueillies sont exclusivement destinées à répondre à vos demandes directes, assurer la prestation de nos services, communiquer les suivis de dossiers, structurer vos parcours de formation personnalisés, exécuter les traductions demandées ou optimiser la pertinence de notre accompagnement académique.</p>
+                    </div>
 
-                <h2>4. Confidentialité des documents</h2>
-                <p>
-                    Les documents transmis à GOLS sont traités avec stricte discrétion. Nous ne partageons pas vos documents avec des tiers non concernés par le service demandé, sauf obligation légale ou autorisation explicite de votre part.
-                </p>
+                    <!-- Panel d'importance stylisé pour l'engagement de confidentialité des pièces officielles -->
+                    <div class="intro-panel" style="border-left: 4px solid var(--color-primary); border-radius: var(--radius-sm); padding: 2rem;">
+                        <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fa-solid fa-lock" style="color: var(--color-primary); font-size: 0.9em;"></i> 4. Confidentialité des documents
+                        </h2>
+                        <p style="margin: 0; font-size: 1rem;">Les pièces et textes transmis à GOLS pour traduction, relecture ou révision sont traités avec une discrétion absolue et un secret professionnel strict. Nous ne divulguons, ne partageons ni ne vendons aucun document à des tiers non concernés par la validation technique ou l'exécution directe du service requis, sauf obligation légale explicite.</p>
+                    </div>
 
-                <h2>5. Partage des informations</h2>
-                <p>
-                    GOLS ne vend pas vos informations personnelles. Certaines informations peuvent être utilisées par des outils techniques nécessaires au fonctionnement du site, comme les services de formulaire, d’email ou d’hébergement (ex: Web3Forms).
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">5. Partage des informations</h2>
+                        <p>GOLS ne commercialise aucune donnée personnelle. Certaines informations techniques chiffrées sont relayées de manière sécurisée uniquement aux architectures tierces nécessaires au bon fonctionnement de nos passerelles de communication (notamment l'API de traitement de formulaires Web3Forms).</p>
+                    </div>
 
-                <h2>6. Conservation des données</h2>
-                <p>
-                    Les informations sont conservées uniquement pendant la durée nécessaire au traitement de votre demande, au suivi du service ou au respect d’obligations administratives et légales raisonnables.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">6. Conservation des données</h2>
+                        <p>Les informations nominatives et textuelles sont conservées uniquement pendant la durée strictement nécessaire à l'accomplissement des prestations de services, au suivi pédagogique des apprenants ou au respect de nos obligations administratives et de conformité légale.</p>
+                    </div>
 
-                <h2>7. Vos droits</h2>
-                <p>
-                    Vous pouvez nous contacter pour demander l’accès, la correction ou la suppression de vos informations personnelles lorsque cela est applicable.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">7. Vos droits</h2>
+                        <p>Conformément aux règles en vigueur, vous disposez d'un droit permanent d’accès, de rectification, de mise à jour ou de suppression des informations personnelles vous concernant. Vous pouvez exercer ce droit à tout moment en prenant contact avec nos services.</p>
+                    </div>
 
-                <h2>8. Contact</h2>
-                <p>
-                    Pour toute question concernant cette politique de confidentialité, veuillez nous contacter à :<br>
-                    <a href="mailto:gardenoflanguagesandservices@gmail.com" style="display: inline-block; margin-top: 8px;"><i class="fa-solid fa-envelope"></i> gardenoflanguagesandservices@gmail.com</a>
-                </p>
+                    <div style="background-color: var(--color-surface-2); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">8. Contact Référent</h2>
+                        <p>Pour toute question relative à la présente politique ou pour toute demande de modification de vos données, veuillez nous écrire directement à notre adresse officielle :</p>
+                        <a href="mailto:gardenoflanguagesandservices@gmail.com" style="color: var(--color-primary); font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; font-size: 1rem;">
+                            <i class="fa-solid fa-envelope"></i> gardenoflanguagesandservices@gmail.com
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER (Matched across all pages) -->
+    <!-- Pied de Page Institutionnel Unifié -->
     <footer class="site-footer">
-        <div class="wrapper footer-grid">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <h3>GOLS</h3>
+                <h3 class="footer-title">Garden of Languages and Services</h3>
                 <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
-                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                <address>
+                    <i class="fa-solid fa-location-dot" style="color: var(--color-primary); margin-right: 0.5rem;"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti
+                </address>
             </div>
 
-            <div class="footer-links">
-                <h4>Nos Services</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Nos Services</h4>
                 <a href="courses.html">Cours de langues</a>
                 <a href="courses.html">Formations techniques</a>
-                <a href="translation.html">Traduction de documents</a>
-                <a href="services.html">Relecture et consultation</a>
+                <a href="translation.html">Traduction officielle</a>
+                <a href="services.html">Relecture et révision</a>
             </div>
 
-            <div class="footer-contact">
-                <h4>Contactez-nous</h4>
-                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
-                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Contact Direct</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Bureau Direct</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Secrétariat GOLS</a>
             </div>
 
-            <div class="footer-info">
-                <h4>Légal & Info</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Légal & Info</h4>
                 <a href="about.html">À propos de nous</a>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
-                <a href="terms-of-service.html">Conditions d’utilisation</a>
+                <a href="privacy-policy.html">Confidentialité</a>
+                <a href="terms-of-service.html">Conditions</a>
             </div>
         </div>
 
-        <div class="wrapper footer-bottom">
+        <div class="container footer-bottom">
             <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
         </div>
     </footer>
 
+    <!-- Script de Synchronisation Persistante du Thème Sombre/Clair -->
+    <script>
+        (function () {
+          const root = document.documentElement;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          let savedTheme = localStorage.getItem("gols-theme");
+          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+          root.setAttribute("data-theme", theme);
+
+          if (toggle) {
+            toggle.addEventListener("click", function () {
+              theme = theme === "dark" ? "light" : "dark";
+              root.setAttribute("data-theme", theme);
+              localStorage.setItem("gols-theme", theme);
+            });
+          }
+        })();
+    </script>
 </body>
 </html>
