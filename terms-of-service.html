@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,130 +7,189 @@
     
     <title>Conditions d’utilisation | Garden of Languages and Services</title>
     <meta name="description" content="Conditions d’utilisation des services, formations et traductions de Garden of Languages and Services (GOLS).">
+    <meta name="theme-color" content="#01696f">
     
-    <!-- Google Fonts for premium typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Liens Typographiques Privilégiés (Satoshi & Boska) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome for Professional Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Link to your main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-    <!-- HEADER (Matched across all pages) -->
+    <!-- En-tête de Navigation Institutionnel Unifié -->
     <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-circle">G</div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+                <img src="logo.jpg" alt="Logo de Garden of Languages and Services" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
                 <span class="logo-text">GOLS</span>
             </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
                 <a href="services.html">Services</a>
                 <a href="courses.html">Cours</a>
                 <a href="translation.html">Traduction</a>
-                <a href="contact.html" class="cta-nav-btn">Contact</a>
             </nav>
+
+            <div class="nav-actions">
+                <a
+                  href="https://wa.me/50948382252"
+                  class="nav-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contacter GOLS sur WhatsApp"
+                >
+                  WhatsApp
+                </a>
+
+                <button
+                  type="button"
+                  class="theme-toggle"
+                  data-theme-toggle
+                  aria-label="Changer le thème"
+                  title="Changer le thème"
+                >
+                  <span aria-hidden="true">◐</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <!-- LEGAL CONTENT SECTION -->
-        <section class="legal-page" style="padding-top: 140px; padding-bottom: 80px;">
-            <div class="wrapper legal-container">
-                <h1><i class="fa-solid fa-file-contract" style="color: var(--accent); margin-right: 12px;"></i>Conditions d’utilisation</h1>
-                <p style="color: var(--text-muted); font-style: italic; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 20px;">Dernière mise à jour : 2026</p>
+    <main id="main-content">
+        <!-- Section Contenu Légal Éditorial -->
+        <section class="section legal-page">
+            <div class="container" style="max-w: 800px;">
+                
+                <div style="margin-bottom: 3rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1.5rem;">
+                    <h1 style="display: flex; align-items: center; gap: 1rem; font-size: clamp(2.2rem, 5vw, 3.2rem);">
+                        <i class="fa-solid fa-file-contract" style="color: var(--color-primary); font-size: 0.85em;"></i>
+                        Conditions d’utilisation
+                    </h1>
+                    <p style="color: var(--color-text-faint); font-style: italic; margin-top: 1rem; font-size: 0.95rem;">
+                        Dernière mise à jour : 2026
+                    </p>
+                </div>
 
-                <h2>1. Acceptation des conditions</h2>
-                <p>
-                    En utilisant le site web de Garden of Languages and Services (GOLS), vous acceptez les présentes conditions d’utilisation. Si vous n’acceptez pas ces conditions, veuillez ne pas utiliser ce site.
-                </p>
+                <div style="display: grid; gap: 2.5rem; color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.7;">
+                    
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">1. Acceptation des conditions</h2>
+                        <p>En naviguant et en utilisant le site web officiel de Garden of Languages and Services (GOLS), vous acceptez expressément et sans réserve les présentes conditions d’utilisation. Si vous refusez d'adhérer à ces clauses, nous vous prions de cesser l'utilisation de cette plateforme.</p>
+                    </div>
 
-                <h2>2. Services proposés</h2>
-                <p>
-                    GOLS offre des cours de langues, des formations techniques, des services de traduction, de relecture, de correction et de consultation linguistique. Les détails et la portée de chaque service peuvent varier selon la demande spécifique du client.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">2. Services proposés</h2>
+                        <p>GOLS dispense des cours de langues modernes, des formations techniques spécialisées, des services de traduction certifiée, ainsi que des prestations de relecture, de correction et de consultation linguistique. Les modalités, les volumes et les cadres spécifiques de chaque prestation font l'objet d'un ajustement précis selon la commande de chaque client.</p>
+                    </div>
 
-                <h2>3. Demandes de service</h2>
-                <p>
-                    Toute demande envoyée par formulaire, email ou WhatsApp doit contenir des informations exactes et véridiques. GOLS se réserve le droit de demander des détails supplémentaires avant d’accepter ou de commencer le traitement d'un service.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">3. Demandes de service</h2>
+                        <p>Toute requête transmise par le biais de nos formulaires électroniques, par courrier électronique ou via la messagerie WhatsApp professionnelle doit impérativement comporter des données exactes et véridiques. GOLS se réserve le droit de solliciter des justificatifs ou détails complémentaires avant de valider et d'amorcer le traitement technique de tout service.</p>
+                    </div>
 
-                <h2>4. Traduction et documents</h2>
-                <p>
-                    Les clients sont responsables de fournir des documents lisibles, complets et exacts. Les délais de traduction ou de correction dépendent de la nature, de la longueur et de la complexité du document, et seront confirmés lors de l'évaluation initiale.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">4. Traduction et documents</h2>
+                        <p>Il incombe au client de soumettre des documents source parfaitement lisibles, complets, intègres et conformes à la réalité. Les délais d'exécution des travaux de traduction ou de révision stylistique sont corrélés à la longueur, la nature technique et la complexité des textes. Ils sont définitivement actés lors de l’évaluation diagnostique initiale.</p>
+                    </div>
 
-                <h2>5. Paiement et confirmation</h2>
-                <p>
-                    Lorsqu’un paiement est requis, les modalités sont communiquées de manière transparente avant le début du service. Un service peut nécessiter une confirmation écrite ou le versement d'un acompte avant le début de son traitement.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">5. Paiement et confirmation</h2>
+                        <p>Lorsque l'accomplissement d'un service requiert des frais, les barèmes tarifaires et les modes de règlement sont communiqués de manière transparente en amont de toute intervention. GOLS peut subordonner l'ouverture d'un projet de production ou l'inscription à un cursus à la signature d'un accord écrit ou au versement préalable d'un acompte provisionnel.</p>
+                    </div>
 
-                <h2>6. Annulation et modification</h2>
-                <p>
-                    Toute demande d’annulation ou de modification doit être communiquée dans les plus brefs délais. Les conditions de remboursement ou d’annulation peuvent varier selon l’état d’avancement du service au moment de la demande.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">6. Annulation et modification</h2>
+                        <p>Toute intention de modifier ou d'interrompre une commande en cours doit être notifiée par écrit dans les plus brefs délais. Les conditions de remboursement ou de facturation des prestations partielles dépendent strictement de l’état d’avancement technique du dossier au moment de la réception de la demande.</p>
+                    </div>
 
-                <h2>7. Limitation de responsabilité</h2>
-                <p>
-                    GOLS s’engage à fournir des services sérieux, certifiés et professionnels. Toutefois, GOLS ne peut être tenu responsable des décisions administratives, académiques, légales ou institutionnelles prises par des tiers (ambassades, universités, tribunaux) à partir des documents ou services fournis.
-                </p>
+                    <!-- Panel d'importance institutionnelle pour la limitation de responsabilité -->
+                    <div class="intro-panel" style="border-left: 4px solid var(--color-primary); border-radius: var(--radius-sm); padding: 2rem;">
+                        <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fa-solid fa-scale-balanced" style="color: var(--color-primary); font-size: 0.9em;"></i> 7. Limitation de responsabilité
+                        </h2>
+                        <p style="margin: 0; font-size: 1rem;">GOLS déploie un niveau d'exigence rigoureux pour assurer l'excellence et la certification de ses services linguistiques. Toutefois, GOLS ne saurait être tenu responsable des arbitrages souverains, décisions administratives, légales ou institutionnelles rendus par des instances tierces (ministères, ambassades, universités, tribunaux) à la suite de la production des documents traduits ou des formations dispensées.</p>
+                    </div>
 
-                <h2>8. Propriété du contenu</h2>
-                <p>
-                    Les textes, images, logos et contenus présents sur ce site appartiennent exclusivement à GOLS ou sont utilisés avec autorisation. Toute reproduction, distribution ou utilisation non autorisée est strictement interdite.
-                </p>
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">8. Propriété du contenu</h2>
+                        <p>Les éléments d'architecture visuelle, chartes graphiques, textes originaux, structures logiques et logos publiés sur ce site web sont la propriété exclusive de GOLS ou font l'objet d'une licence d'exploitation autorisée. Toute reproduction, extraction ou redistribution non autorisée par écrit est constitutive d'une contrefaçon et demeure strictement proscrite.</p>
+                    </div>
 
-                <h2>9. Contact</h2>
-                <p>
-                    Pour toute question concernant ces conditions d'utilisation, veuillez nous contacter à :<br>
-                    <a href="mailto:gardenoflanguagesandservices@gmail.com" style="display: inline-block; margin-top: 8px;"><i class="fa-solid fa-envelope"></i> gardenoflanguagesandservices@gmail.com</a>
-                </p>
+                    <div style="background-color: var(--color-surface-2); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 700; color: var(--color-text);">9. Contact Référent</h2>
+                        <p>Pour toute demande de précision ou d'information complémentaire quant aux présentes conditions générales d'utilisation, veuillez vous adresser directement à nos services :</p>
+                        <a href="mailto:gardenoflanguagesandservices@gmail.com" style="color: var(--color-primary); font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; font-size: 1rem;">
+                            <i class="fa-solid fa-envelope"></i> gardenoflanguagesandservices@gmail.com
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER (Matched across all pages) -->
+    <!-- Pied de Page Institutionnel Unifié -->
     <footer class="site-footer">
-        <div class="wrapper footer-grid">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <h3>GOLS</h3>
+                <h3 class="footer-title">Garden of Languages and Services</h3>
                 <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
-                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                <address>
+                    <i class="fa-solid fa-location-dot" style="color: var(--color-primary); margin-right: 0.5rem;"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti
+                </address>
             </div>
 
-            <div class="footer-links">
-                <h4>Nos Services</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Nos Services</h4>
                 <a href="courses.html">Cours de langues</a>
                 <a href="courses.html">Formations techniques</a>
-                <a href="translation.html">Traduction de documents</a>
-                <a href="services.html">Relecture et consultation</a>
+                <a href="translation.html">Traduction officielle</a>
+                <a href="services.html">Relecture et révision</a>
             </div>
 
-            <div class="footer-contact">
-                <h4>Contactez-nous</h4>
-                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
-                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Contact Direct</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Bureau Direct</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Secrétariat GOLS</a>
             </div>
 
-            <div class="footer-info">
-                <h4>Légal & Info</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Légal & Info</h4>
                 <a href="about.html">À propos de nous</a>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
-                <a href="terms-of-service.html">Conditions d’utilisation</a>
+                <a href="privacy-policy.html">Confidentialité</a>
+                <a href="terms-of-service.html">Conditions</a>
             </div>
         </div>
 
-        <div class="wrapper footer-bottom">
+        <div class="container footer-bottom">
             <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
         </div>
     </footer>
 
+    <!-- Script de Synchronisation Persistante du Thème Sombre/Clair -->
+    <script>
+        (function () {
+          const root = document.documentElement;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          let savedTheme = localStorage.getItem("gols-theme");
+          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+          root.setAttribute("data-theme", theme);
+
+          if (toggle) {
+            toggle.addEventListener("click", function () {
+              theme = theme === "dark" ? "light" : "dark";
+              root.setAttribute("data-theme", theme);
+              localStorage.setItem("gols-theme", theme);
+            });
+          }
+        })();
+    </script>
 </body>
 </html>
