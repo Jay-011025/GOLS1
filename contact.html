@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +7,167 @@
     
     <title>Contact | Garden of Languages and Services</title>
     <meta name="description" content="Contactez GOLS pour initialiser votre projet de traduction, vos cours de langues ou vos formations techniques.">
+    <meta name="theme-color" content="#01696f">
     
-    <!-- Google Fonts for premium typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Liens Typographiques Privilégiés (Satoshi & Boska) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome for Professional Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Link to your main stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Optimisation locale pour l'alignement précis du formulaire corporatif */
+        .contact-form-group {
+            display: grid;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .contact-form-group label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+        }
+        .contact-form-group input,
+        .contact-form-group select,
+        .contact-form-group textarea {
+            width: 100%;
+            min-height: 44px;
+            padding: 0.65rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+            background: var(--color-bg);
+            color: var(--color-text);
+            outline: none;
+            transition: border-color var(--transition), background-color var(--transition);
+        }
+        .contact-form-group input:focus,
+        .contact-form-group select:focus,
+        .contact-form-group textarea:focus {
+            border-color: var(--color-primary);
+            background: var(--color-surface);
+        }
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--color-text-faint);
+            line-height: 1.5;
+            margin-top: 1.5rem;
+        }
+        .form-note a {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <!-- HEADER -->
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <!-- En-tête de Navigation Institutionnel Unifié -->
     <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-circle">G</div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+                <img src="logo.jpg" alt="Logo de Garden of Languages and Services" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
                 <span class="logo-text">GOLS</span>
             </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
                 <a href="services.html">Services</a>
                 <a href="courses.html">Cours</a>
                 <a href="translation.html">Traduction</a>
-                <a href="contact.html" class="active cta-nav-btn">Contact</a>
             </nav>
+
+            <div class="nav-actions">
+                <a
+                  href="https://wa.me/50948382252"
+                  class="nav-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contacter GOLS sur WhatsApp"
+                >
+                  WhatsApp
+                </a>
+
+                <button
+                  type="button"
+                  class="theme-toggle"
+                  data-theme-toggle
+                  aria-label="Changer le thème"
+                  title="Changer le thème"
+                >
+                  <span aria-hidden="true">◐</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <!-- CONTACT SECTION -->
-        <!-- Added extra top padding to account for the fixed header -->
-        <section class="contact-section" style="padding-top: 140px; padding-bottom: 100px; min-height: 80vh;">
-            <div class="wrapper contact-grid">
+    <main id="main-content">
+        <!-- Section Principale de Contact -->
+        <section class="section contact-section">
+            <div class="container intro-grid" style="align-items: start;">
                 
-                <!-- Left Column: Information -->
+                <!-- Colonne Gauche : Informations de Contextes civils -->
                 <div class="contact-text">
                     <span class="section-label">Contact & Devis</span>
-                    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 20px;">Initialiser un Projet</h1>
-                    <p style="font-size: 1.1rem; margin-bottom: 40px;">
+                    <h1 style="margin-bottom: 1.5rem;">Initialiser un Projet</h1>
+                    <p style="font-size: 1.15rem; margin-bottom: 3rem;">
                         Soumettez vos documents pour traduction ou vos objectifs d'apprentissage ci-dessous. Notre équipe examinera votre demande avec soin et vous répondra dans les plus brefs délais avec une orientation sur mesure.
                     </p>
 
-                    <div class="contact-info" style="background: var(--bg-main); padding: 30px; border-radius: var(--radius-md); border: 1px solid var(--border);">
-                        <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Nos Coordonnées</h3>
-                        <p style="margin-bottom: 12px;"><strong><i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 8px;"></i> Siège Social :</strong><br> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-                        <p style="margin-bottom: 12px;"><strong><i class="fa-brands fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> WhatsApp :</strong><br> <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">+509 4838 2252</a></p>
-                        <p><strong><i class="fa-solid fa-envelope" style="color: var(--accent); margin-right: 8px;"></i> Email :</strong><br> <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a></p>
+                    <div class="intro-panel" style="display: grid; gap: 1.5rem;">
+                        <h3 class="intro-panel-title" style="font-family: var(--font-body); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.5px;">Nos Coordonnées</h3>
+                        
+                        <p style="font-size: 0.95rem; line-height: 1.5;">
+                            <strong style="color: var(--color-text); display: block; margin-bottom: 0.25rem;">
+                                <i class="fa-solid fa-location-dot" style="color: var(--color-primary); width: 20px;"></i> Siège Social
+                            </strong>
+                            #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110
+                        </p>
+                        
+                        <p style="font-size: 0.95rem; line-height: 1.5;">
+                            <strong style="color: var(--color-text); display: block; margin-bottom: 0.25rem;">
+                                <i class="fa-brands fa-whatsapp" style="color: #25D366; width: 20px;"></i> WhatsApp Bureau
+                            </strong>
+                            <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 600;">+509 4838 2252</a>
+                        </p>
+                        
+                        <p style="font-size: 0.95rem; line-height: 1.5;">
+                            <strong style="color: var(--color-text); display: block; margin-bottom: 0.25rem;">
+                                <i class="fa-solid fa-envelope" style="color: var(--color-primary); width: 20px;"></i> Courriel Électronique
+                            </strong>
+                            <a href="mailto:gardenoflanguagesandservices@gmail.com" style="color: var(--color-primary); font-weight: 600;">gardenoflanguagesandservices@gmail.com</a>
+                        </p>
                     </div>
                 </div>
 
-                <!-- Right Column: The Form -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <!-- Colonne Droite : Formulaire de Traitement Sécurisé -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="intro-panel" style="box-shadow: var(--shadow-md);">
                     
-                    <!-- Web3Forms Hidden Inputs -->
+                    <!-- Web3Forms Config Validation Hidden Tokens -->
                     <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
-                    <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
+                    <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS Formulaire Dédié">
                     <input type="checkbox" name="botcheck" style="display: none;">
 
-                    <div class="form-group">
+                    <div class="contact-form-group">
                         <label for="name">Nom Complet / Organisation</label>
                         <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
                     </div>
 
-                    <div class="form-group">
+                    <div class="contact-form-group">
                         <label for="email">Adresse E-mail</label>
                         <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
                     </div>
                     
-                    <div class="form-group">
+                    <div class="contact-form-group">
                         <label for="phone">Numéro de Téléphone (WhatsApp inclus)</label>
                         <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
                     </div>
 
-                    <div class="form-group">
+                    <div class="contact-form-group">
                         <label for="service">Service Requis</label>
                         <select id="service" name="service" required>
                             <option value="" disabled selected>Sélectionnez un service...</option>
@@ -96,55 +179,78 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="contact-form-group">
                         <label for="message">Détails du Projet ou Message</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Veuillez décrire vos besoins, vos objectifs ou la nature des documents à traduire..."></textarea>
                     </div>
 
-                    <button type="submit">Envoyer la Demande</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none; min-height: 46px;">Envoyer la Demande</button>
 
                     <p class="form-note">
-                        <i class="fa-solid fa-shield-halved"></i> En soumettant ce formulaire, vous acceptez que GOLS utilise vos informations uniquement pour répondre à votre demande. Consultez notre <a href="privacy-policy.html">Politique de confidentialité</a>.
+                        <i class="fa-solid fa-shield-halved" style="color: var(--color-primary); margin-right: 4px;"></i> En soumettant ce formulaire, vous acceptez que GOLS utilise vos informations uniquement pour répondre à votre demande contextuelle. Consultez notre <a href="privacy-policy.html">Politique de confidentialité</a>.
                     </p>
                 </form>
+                
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- Pied de Page Institutionnel Unifié -->
     <footer class="site-footer">
-        <div class="wrapper footer-grid">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <h3>GOLS</h3>
+                <h3 class="footer-title">Garden of Languages and Services</h3>
                 <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
-                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                <address>
+                    <i class="fa-solid fa-location-dot" style="color: var(--color-primary); margin-right: 0.5rem;"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti
+                </address>
             </div>
 
-            <div class="footer-links">
-                <h4>Nos Services</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Nos Services</h4>
                 <a href="courses.html">Cours de langues</a>
                 <a href="courses.html">Formations techniques</a>
-                <a href="translation.html">Traduction de documents</a>
-                <a href="services.html">Relecture et consultation</a>
+                <a href="translation.html">Traduction officielle</a>
+                <a href="services.html">Relecture et révision</a>
             </div>
 
-            <div class="footer-contact">
-                <h4>Contactez-nous</h4>
-                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
-                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Contact Direct</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Bureau Direct</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Secrétariat GOLS</a>
             </div>
 
-            <div class="footer-info">
-                <h4>Légal & Info</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Légal & Info</h4>
                 <a href="about.html">À propos de nous</a>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
-                <a href="terms-of-service.html">Conditions d’utilisation</a>
+                <a href="privacy-policy.html">Confidentialité</a>
+                <a href="terms-of-service.html">Conditions</a>
             </div>
         </div>
 
-        <div class="wrapper footer-bottom">
+        <div class="container footer-bottom">
             <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Script de Synchronisation Persistante Sombre/Clair -->
+    <script>
+        (function () {
+          const root = document.documentElement;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          let savedTheme = localStorage.getItem("gols-theme");
+          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+          root.setAttribute("data-theme", theme);
+
+          if (toggle) {
+            toggle.addEventListener("click", function () {
+              theme = theme === "dark" ? "light" : "dark";
+              root.setAttribute("data-theme", theme);
+              localStorage.setItem("gols-theme", theme);
+            });
+          }
+        })();
+    </script>
 </body>
 </html>
