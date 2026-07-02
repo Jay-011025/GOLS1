@@ -252,12 +252,27 @@
       </div>
     </div>
 
-    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="name">Nom complet</label>
-      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+    <form action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
+                
+                <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
+                <input type="checkbox" name="botcheck" style="display: none;">
 
-      <label for="email">Adresse email</label>
-      <input type="email" id="email" name="email" placeholder="votreemail@example.com" required>
+                <div class="form-group">
+                    <label for="name">Nom Complet / Organisation</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Numéro de Téléphone (WhatsApp inclus)</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
+                </div>
 
       <label for="service">Service demandé</label>
       <select id="service" name="service" required>
