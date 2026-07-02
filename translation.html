@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Traduction Officielle | GOLS</title>
-    <meta name="description" content="Services de traduction certifiée de documents officiels et administratifs à Gonaïves.">
+    
+    <title>Traduction de documents | Garden of Languages and Services</title>
+    <meta name="description" content="Services de traduction certifiée de documents officiels, académiques et professionnels à Gonaïves par expert-traducteur.">
+    <meta name="theme-color" content="#01696f">
+    
+    <!-- Liens Typographiques Privilégiés (Satoshi & Boska) -->
     <link rel="preconnect" href="https://api.fontshare.com">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
 
+    <!-- En-tête de Navigation Institutionnel Unifié -->
     <header class="site-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="Logo GOLS" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+                <img src="logo.jpg" alt="Logo de Garden of Languages and Services" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
                 <span class="logo-text">GOLS</span>
             </a>
+            
             <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À Propos</a>
@@ -27,6 +36,7 @@
                 <a href="courses.html">Cours</a>
                 <a href="translation.html" class="active" aria-current="page">Traduction</a>
             </nav>
+
             <div class="nav-actions">
                 <a href="https://wa.me/50948382252" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer le thème">◐</button>
@@ -35,54 +45,171 @@
     </header>
 
     <main id="main-content">
-        <section class="section">
-            <div class="container" style="max-w: 900px;">
-                <div style="text-align: center; margin-bottom: 4rem;">
-                    <span class="section-label">Fidélité Textuelle</span>
-                    <h1 style="margin-block: 1rem 1.5rem;">Traduction Certifiée & Légale de Documents</h1>
-                    <p style="font-size: 1.15rem; color: var(--color-text-muted);">Un traitement rigoureux supervisé par notre expert-traducteur agréé.</p>
+        <!-- Section d'Introduction des Services de Traduction -->
+        <section class="section translation-hero">
+            <div class="container">
+                <div style="text-align: center; max-w: 850px; margin: 0 auto 4rem;">
+                    <span class="section-label">Exactitude, Confidentialité & qualité professionnelle</span>
+                    <h1 style="margin-block: 1rem 1.5rem;">Traduction de Documents</h1>
+                    <p style="font-size: 1.15rem; color: var(--color-text-muted); line-height: 1.7;">
+                        Garden of Languages and Services (GOLS) offre un service de traduction pour une large variété de documents : état civil, documents académiques, dossiers administratifs, documents légaux, pièces professionnelles et documents personnels. Chaque dossier est traité avec une rigueur absolue pour garantir sa parfaite validité.
+                    </p>
                 </div>
 
-                <div class="intro-grid" style="margin-bottom: 4rem;">
-                    <div class="intro-copy">
-                        <h2>Précision morphosémantique et conformité administrative</h2>
-                        <p>Nous assurons la transposition stricte et certifiée de vos pièces officielles pour vos démarches académiques, consulaires, migratoires ou juridiques.</p>
-                        <p style="margin-top: 1rem;">Chaque document est analysé manuellement pour garantir une parité contextuelle irréprochable avec le texte source.</p>
-                    </div>
-                    <div class="intro-panel">
-                        <p class="intro-panel-title">Documents pris en charge :</p>
+                <!-- Grille Typologique des Documents Pris en Charge -->
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+                    
+                    <!-- Catégorie 1: État Civil -->
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-id-card"></i> Formalités Civiles</p>
+                        <h3>Documents d’état civil</h3>
                         <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
-                            <li style="border: none; background: none; padding: 0;">Actes de naissance & mariage</li>
-                            <li style="border: none; background: none; padding: 0;">Diplômes & Relevés de notes</li>
-                            <li style="border: none; background: none; padding: 0;">Extraits d'archives & Actes légaux</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Acte de naissance</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Acte de mariage</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Acte de divorce</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Acte de décès</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Extrait d’archives</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Certificat de célibat</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Certificat de nationalité</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Certificat de résidence</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Acte de reconnaissance</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Livret de famille</li>
                         </ul>
-                    </div>
-                </div>
+                    </article>
 
-                <div style="text-align: center;">
-                    <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem;">Demander un devis de traduction</a>
+                    <!-- Catégorie 2: Académiques -->
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-graduation-cap"></i> Parcours Universitaire</p>
+                        <h3>Documents académiques</h3>
+                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Diplôme</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Relevé de notes</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Certificat de scolarité</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Attestation de réussite</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Lettre d’admission</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Lettre de recommandation</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Curriculum vitae</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Lettre de motivation</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Mémoire, thèse ou article académique</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Programme d’études</li>
+                        </ul>
+                    </article>
+
+                    <!-- Catégorie 3: Administratifs et Légaux -->
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-gavel"></i> Cadre Réglementaire</p>
+                        <h3>Documents administratifs et légaux</h3>
+                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Casier judiciaire</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Passeport</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Carte d’identification</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Permis de conduire</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Contrat</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Procuration</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Déclaration officielle</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Document notarié</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Jugement</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Dossier d’immigration</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Document consulaire</li>
+                        </ul>
+                    </article>
+
+                    <!-- Catégorie 4: Professionnels -->
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-briefcase"></i> Solutions Corporatives</p>
+                        <h3>Documents professionnels</h3>
+                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Attestation de travail</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Contrat de travail</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Lettre d’emploi</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Certificat de formation</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Rapport professionnel</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Présentation d’entreprise</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Document commercial</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Lettre administrative</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem;">Courriel professionnel</li>
+                        </ul>
+                    </article>
+
+                    <!-- Catégorie 5: Médicaux et Personnels -->
+                    <article class="card" style="background-color: var(--color-primary-soft); border-color: var(--color-primary);">
+                        <p class="card-kicker" style="color: var(--color-primary);"><i class="fa-solid fa-user-shield"></i> Sphère Privée</p>
+                        <h3>Documents médicaux et personnels</h3>
+                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; width: 100%;">
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Certificat médical</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Carnet de vaccination</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Rapport médical</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Lettre personnelle</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Déclaration sur l’honneur</li>
+                            <li style="border: none; background: none; padding: 0; font-size: 0.95rem; color: var(--color-text);">Document familial</li>
+                        </ul>
+                    </article>
+
+                </div>
+                
+                <!-- Bouton d'Action Devis Direct -->
+                <div style="text-align: center; margin-top: 5rem;">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1.1rem 3rem; font-size: 1rem;">Demander un devis de traduction</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3 class="footer-title">Garden of Languages and Services</h3>
-                <address>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti</address>
-            </div>
-            <div class="footer-sect">
-                <h4 class="footer-heading">Légal</h4>
-                <a href="privacy-policy.html">Confidentialité</a>
-                <a href="terms-of-service.html">Conditions</a>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
-        </div>
-    </footer>
+    <!-- Pied de Page Institutionnel Unifié -->
+    <!-- PIED DE PAGE INSTITUTIONNEL UNIFIÉ -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        
+        <!-- Colonne 1 : Identité & Mission -->
+        <section>
+            <h3 class="footer-title">Garden of Languages and Services</h3>
+            <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
+            <address>
+                <i class="fa-solid fa-location-dot" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
+                #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110
+            </address>
+        </section>
 
+        <!-- Colonne 2 : Navigation Services -->
+        <section>
+            <h4 class="footer-heading">Services</h4>
+            <a href="courses.html">Cours de langues</a>
+            <a href="courses.html">Formations techniques</a>
+            <a href="translation.html">Traduction officielle</a>
+            <a href="services.html">Relecture et révision</a>
+        </section>
+
+        <!-- Colonne 3 : Contact Direct -->
+        <section>
+            <h4 class="footer-heading">Contact</h4>
+            <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp : +509 4838 2252
+            </a>
+            <a href="tel:+50948382252">
+                <i class="fa-solid fa-phone"></i> Appeler : +509 4838 2252
+            </a>
+            <a href="mailto:gardenoflanguagesandservices@gmail.com">
+                <i class="fa-regular fa-envelope"></i> Secrétariat GOLS
+            </a>
+        </section>
+
+        <!-- Colonne 4 : Liens Légaux -->
+        <section>
+            <h4 class="footer-heading">Informations</h4>
+            <a href="about.html">À propos de nous</a>
+            <a href="privacy-policy.html">Confidentialité</a>
+            <a href="terms-of-service.html">Conditions d’utilisation</a>
+        </section>
+        
+    </div>
+
+    <!-- Bandeau de Copyright Bas -->
+    <div class="container footer-bottom">
+        <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <!-- Script de Synchronisation Sombre/Clair -->
     <script>
         (function () {
           const root = document.documentElement;
