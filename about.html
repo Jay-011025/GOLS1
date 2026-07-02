@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,255 +7,269 @@
     
     <title>À Propos | Garden of Languages and Services</title>
     <meta name="description" content="Découvrez GOLS, un centre de formation et de services linguistiques tourné vers l'excellence à Gonaïves.">
+    <meta name="theme-color" content="#01696f">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Liens Typographiques Privilégiés (Satoshi & Boska) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <!-- En-tête de Navigation Harmonisé -->
     <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-circle">G</div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+                <img src="logo.jpg" alt="Logo de Garden of Languages and Services" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
                 <span class="logo-text">GOLS</span>
             </a>
             
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
-                <a href="about.html" class="active">À Propos</a>
+                <a href="about.html" class="active" aria-current="page">À Propos</a>
                 <a href="services.html">Services</a>
                 <a href="courses.html">Cours</a>
                 <a href="translation.html">Traduction</a>
-                <a href="contact.html" class="cta-nav-btn">Contact</a>
             </nav>
+
+            <div class="nav-actions">
+                <a
+                  href="https://wa.me/50948382252"
+                  class="nav-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contacter GOLS sur WhatsApp"
+                >
+                  WhatsApp
+                </a>
+
+                <button
+                  type="button"
+                  class="theme-toggle"
+                  data-theme-toggle
+                  aria-label="Changer le thème"
+                  title="Changer le thème"
+                >
+                  <span aria-hidden="true">◐</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="about-section" id="about" style="margin-top: 80px;">
-            <div class="wrapper about-grid">
-                <div>
+    <main id="main-content">
+        <!-- Section Présentation Institutionnelle -->
+        <section class="section about-section">
+            <div class="container intro-grid">
+                <div class="intro-copy">
                     <span class="section-label">À propos de GOLS</span>
-                    <h2>Un centre de formation et de services linguistiques tourné vers l’excellence.</h2>
+                    <h2>Un centre de formation et de services linguistiques tourné vers l’excellence</h2>
                     <p>
-                        Garden of Languages and Services accompagne les étudiants, professionnels, institutions et particuliers dans le développement de leurs compétences linguistiques, techniques et communicationnelles.
+                        Garden of Languages and Services (GOLS) accompagne les étudiants, professionnels, institutions et particuliers dans le développement de leurs compétences linguistiques, techniques et communicationnelles.
                     </p>
                     <p>
-                        Notre mission est simple : rendre le savoir accessible, pratique et utile. Nous combinons formation, accompagnement personnalisé et services professionnels pour aider chaque apprenant ou client à progresser avec confiance.
+                        Notre mission est explicite : rendre le savoir accessible, pratique et utile. Nous combinons formation, accompagnement personnalisé et services professionnels pour aider chaque apprenant ou client à progresser avec confiance.
                     </p>
                 </div>
 
-                <div class="about-card">
-                    <h3>Nos domaines d’intervention</h3>
-                    <ul>
-                        <li>Cours de langues modernes</li>
-                        <li>Formation en intelligence artificielle</li>
-                        <li>Informatique bureautique</li>
-                        <li>Traduction de documents officiels</li>
-                        <li>Relecture, correction et consultation</li>
+                <div class="intro-panel">
+                    <h3 class="intro-panel-title">Nos domaines d’intervention</h3>
+                    <ul class="hero-points" role="list" style="display: grid; gap: 0.75rem; border: none; padding: 0; width: 100%;">
+                        <li style="border: none; background: none; padding: 0;">Cours de langues modernes</li>
+                        <li style="border: none; background: none; padding: 0;">Formation en intelligence artificielle</li>
+                        <li style="border: none; background: none; padding: 0;">Informatique bureautique</li>
+                        <li style="border: none; background: none; padding: 0;">Traduction de documents officiels</li>
+                        <li style="border: none; background: none; padding: 0;">Relecture, correction et consultation</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="detailed-services" id="services">
-            <div class="wrapper">
-                <div class="section-header">
-                    <span class="section-label">Nos services</span>
-                    <h2>Des services conçus pour vos besoins académiques, professionnels et personnels.</h2>
-                </div>
+        <!-- Section Grille Détaillée des Pôles de Services -->
+        <section class="services-preview section" id="services">
+            <div class="container">
+                <span class="section-label">Nos pôles d’activité</span>
+                <h2 class="section-title">Des solutions concrètes pour apprendre, traduire et mieux communiquer</h2>
 
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="grid">
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-earth-americas"></i> Cours & Formations</p>
                         <h3>Cours de langues</h3>
-                        <p>Apprenez ou améliorez votre niveau en Créole Haïtien, Français, Espagnol, Anglais et Catalan grâce à des cours structurés.</p>
-                        <ul>
-                            <li>Débutant, intermédiaire et avancé</li>
-                            <li>Expression orale et écrite</li>
-                            <li>Communication professionnelle</li>
-                        </ul>
+                        <p>Apprenez ou améliorez votre niveau en Créole Haïtien, Français, Espagnol, Anglais et Catalan grâce à des parcours structurés et progressifs.</p>
+                        <a href="courses.html" class="card-link">Découvrir les cours</a>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-laptop-code"></i> Formations Techniques</p>
                         <h3>Formations techniques</h3>
-                        <p>Développez des compétences pratiques en intelligence artificielle et en informatique bureautique.</p>
-                        <ul>
-                            <li>Microsoft Word, Excel et PowerPoint</li>
-                            <li>Initiation à l’intelligence artificielle</li>
-                            <li>Compétences numériques essentielles</li>
-                        </ul>
+                        <p>Développez des compétences pratiques indispensables en informatique bureautique (Word, Excel, PowerPoint) et en initiation à l’intelligence artificielle.</p>
+                        <a href="courses.html" class="card-link">Explorer les techniques</a>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-file-signature"></i> Fidélité Textuelle</p>
                         <h3>Traduction de documents</h3>
-                        <p>Service de traduction avec expert-traducteur pour vos documents officiels, administratifs et personnels.</p>
-                        <ul>
-                            <li>Acte de naissance et mariage</li>
-                            <li>Diplôme et relevé de notes</li>
-                            <li>Documents légaux et académiques</li>
-                        </ul>
+                        <p>Service de traduction certifiée avec expert-traducteur pour vos actes de naissance, de mariage, diplômes, relevés de notes et documents légaux.</p>
+                        <a href="translation.html" class="card-link">Voir les traductions</a>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-pen-nib"></i> Accompagnement Académique</p>
                         <h3>Relecture et correction</h3>
-                        <p>Améliorez la clarté, la cohérence et la qualité linguistique de vos textes avec un service approfondi.</p>
-                        <ul>
-                            <li>Correction grammaticale</li>
-                            <li>Amélioration du style</li>
-                            <li>Révision de documents académiques</li>
-                        </ul>
+                        <p>Optimisez la clarté, la cohérence et la qualité syntaxique de vos mémoires, textes scientifiques et écrits à usage professionnel.</p>
+                        <a href="services.html" class="card-link">Demander une révision</a>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                    <article class="card">
+                        <p class="card-kicker"><i class="fa-solid fa-comments"></i> Rigueur Stratégique</p>
                         <h3>Consultation linguistique</h3>
-                        <p>Bénéficiez d’un accompagnement personnalisé pour vos projets éducatifs ou institutionnels.</p>
-                        <ul>
-                            <li>Conseils linguistiques</li>
-                            <li>Accompagnement de projets</li>
-                            <li>Communication multilingue</li>
-                        </ul>
+                        <p>Bénéficiez d’un accompagnement personnalisé et de conseils spécialisés pour vos projets éducatifs, institutionnels ou éditoriaux.</p>
+                        <a href="services.html" class="card-link">Prendre rendez-vous</a>
                     </article>
 
-                    <article class="service-card highlighted">
-                        <div class="service-icon"><i class="fa-solid fa-bullseye" style="color: white;"></i></div>
-                        <h3>Accompagnement personnalisé</h3>
-                        <p>Nous vous aidons à choisir le service, la formation ou le parcours le plus adapté à votre objectif.</p>
-                        <a href="#contact" class="card-button">Demander une consultation</a>
+                    <article class="card" style="background-color: var(--color-primary-soft); border-color: var(--color-primary);">
+                        <p class="card-kicker" style="color: var(--color-primary);"><i class="fa-solid fa-bullseye"></i> Orientation Directe</p>
+                        <h3>Parcours sur mesure</h3>
+                        <p>Nous analysons vos objectifs spécifiques afin de concevoir l'accompagnement le plus adapté à votre projet professionnel.</p>
+                        <a href="#contact" class="btn btn-primary" style="margin-top: auto; min-height: 40px;">Consultation gratuite</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="why-section">
-            <div class="wrapper">
-                <div class="section-header" style="text-align: left;">
-                    <span class="section-label">Pourquoi choisir GOLS ?</span>
-                    <h2>Une approche sérieuse, humaine et orientée résultats.</h2>
-                </div>
+        <!-- Section Proposition de Valeur -->
+        <section class="section why-section">
+            <div class="container">
+                <span class="section-label">Pourquoi choisir GOLS ?</span>
+                <h2 class="section-title">Une approche sérieuse, humaine et orientée résultats</h2>
 
-                <div class="why-grid">
-                    <div class="why-item">
+                <div class="grid">
+                    <div class="card">
                         <h3>Formation pratique</h3>
-                        <p>Les cours sont construits autour de compétences directement applicables.</p>
+                        <p>Les cours sont construits autour de compétences linguistiques et structurales directement applicables sur le terrain.</p>
                     </div>
-                    <div class="why-item">
+                    <div class="card">
                         <h3>Accompagnement clair</h3>
-                        <p>Chaque apprenant ou client reçoit une orientation adaptée à ses besoins.</p>
+                        <p>Chaque apprenant ou client reçoit une orientation personnalisée, adaptée à son rythme et à ses impératifs réels.</p>
                     </div>
-                    <div class="why-item">
+                    <div class="card">
                         <h3>Services professionnels</h3>
-                        <p>Les documents sont traités avec rigueur, confidentialité et attention.</p>
+                        <p>Vos documents officiels et administratifs sont traités avec une rigueur absolue, une discrétion totale et une attention aux nuances.</p>
                     </div>
-                    <div class="why-item">
+                    <div class="card">
                         <h3>Vision multilingue</h3>
-                        <p>GOLS valorise les langues comme outils d’éducation et d’opportunité.</p>
+                        <p>GOLS valorise la maîtrise des langues modernes comme des leviers majeurs d’éducation, de mobilité internationale et d’opportunités.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="process-section">
-            <div class="wrapper">
-                <span class="section-label" style="color: var(--secondary);">Comment ça marche ?</span>
-                <h2>Un processus simple et efficace.</h2>
+        <!-- Section Pipeline Méthodologique -->
+        <section class="section process-section" style="background-color: var(--color-surface-2);">
+            <div class="container">
+                <span class="section-label">Workflow Opérationnel</span>
+                <h2 class="section-title">Un processus simple, transparent et efficace</h2>
 
-                <div class="process-grid">
-                    <div class="process-step">
-                        <span>01</span>
-                        <h3>Contactez-nous</h3>
-                        <p>Envoyez-nous votre demande par WhatsApp, email ou via le formulaire.</p>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                        <span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-primary); font-weight: 900; line-height: 1;">01</span>
+                        <h3 style="margin-block: 1rem 0.5rem;">Contactez-nous</h3>
+                        <p>Transmettez votre demande par WhatsApp, par courriel ou via notre formulaire d’intake sécurisé.</p>
                     </div>
-                    <div class="process-step">
-                        <span>02</span>
-                        <h3>Présentez votre besoin</h3>
-                        <p>Expliquez le service souhaité : cours, traduction, correction ou consultation.</p>
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                        <span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-primary); font-weight: 900; line-height: 1;">02</span>
+                        <h3 style="margin-block: 1rem 0.5rem;">Définissez le besoin</h3>
+                        <p>Précisez la nature de votre projet : acquisition d'une langue, traduction assermentée, révision ou audit linguistique.</p>
                     </div>
-                    <div class="process-step">
-                        <span>03</span>
-                        <h3>Recevez une orientation</h3>
-                        <p>Nous vous proposons la solution la plus adaptée à votre objectif.</p>
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                        <span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-primary); font-weight: 900; line-height: 1;">03</span>
+                        <h3 style="margin-block: 1rem 0.5rem;">Recevez une proposition</h3>
+                        <p>Nous vous soumettons une solution sur mesure, assortie d’une évaluation claire de la durée et des modalités.</p>
                     </div>
-                    <div class="process-step">
-                        <span>04</span>
-                        <h3>Commencez le service</h3>
-                        <p>Vous démarrez votre formation ou projet avec un accompagnement clair.</p>
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                        <span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-primary); font-weight: 900; line-height: 1;">04</span>
+                        <h3 style="margin-block: 1rem 0.5rem;">Lancement du projet</h3>
+                        <p>Votre formation démarre ou votre dossier entre en production avec la garantie d’un suivi rigoureux.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq-section">
-            <div class="wrapper">
-                <span class="section-label">Questions fréquentes</span>
-                <h2>Ce que les clients demandent souvent.</h2>
+        <!-- Section FAQ (Sémantique & Accessible) -->
+        <section class="section faq-section">
+            <div class="container" style="max-w: 800px;">
+                <div style="text-align: center; margin-bottom: 3.5rem;">
+                    <span class="section-label">Questions Fréquentes</span>
+                    <h2>Réponses aux interrogations courantes</h2>
+                </div>
 
-                <div class="faq-list">
-                    <details>
-                        <summary>Quels types de documents traduisez-vous ?</summary>
-                        <p>Nous traduisons des actes de naissance, actes de mariage, actes de décès, diplômes, relevés de notes, divorces, extraits d’archives et autres documents légaux ou académiques.</p>
+                <div class="faq-list" style="display: grid; gap: 1rem;">
+                    <details class="intro-panel" style="padding: 0; cursor: pointer;">
+                        <summary style="font-weight: 700; padding: 1.5rem; color: var(--color-text); outline: none;">Quels types de documents traduisez-vous ?</summary>
+                        <div style="padding: 0 1.5rem 1.5rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            Nous prenons en charge la traduction officielle et certifiée de vos documents administratifs et académiques : actes de naissance, actes de mariage, jugements de divorce, diplômes, relevés de notes et extraits d’archives.
+                        </div>
                     </details>
-                    <details>
-                        <summary>Quels cours de langues sont disponibles ?</summary>
-                        <p>GOLS offre des cours de Créole Haïtien, Français, Espagnol, Anglais et Catalan.</p>
+
+                    <details class="intro-panel" style="padding: 0; cursor: pointer;">
+                        <summary style="font-weight: 700; padding: 1.5rem; color: var(--color-text); outline: none;">Quels cours de langues sont disponibles ?</summary>
+                        <div style="padding: 0 1.5rem 1.5rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            GOLS dispense des enseignements de haute précision pour cinq langues cibles : Créole Haïtien, Français, Espagnol, Anglais et Catalan.
+                        </div>
                     </details>
-                    <details>
-                        <summary>Offrez-vous des formations techniques ?</summary>
-                        <p>Oui. Nous proposons des formations en intelligence artificielle et en informatique bureautique, notamment Word, Excel et PowerPoint.</p>
-                    </details>
-                    <details>
-                        <summary>Comment puis-je m’inscrire ou demander un service ?</summary>
-                        <p>Vous pouvez nous contacter par WhatsApp, par email ou via le formulaire de contact ci-dessous.</p>
+
+                    <details class="intro-panel" style="padding: 0; cursor: pointer;">
+                        <summary style="font-weight: 700; padding: 1.5rem; color: var(--color-text); outline: none;">Offrez-vous des formations techniques ?</summary>
+                        <div style="padding: 0 1.5rem 1.5rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            Oui. Notre offre technique inclut la maîtrise de l'informatique bureautique essentielle (Microsoft Word, Excel, PowerPoint) ainsi qu’une initiation pratique à l'utilisation professionnelle de l'intelligence artificielle.
+                        </div>
                     </details>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" id="contact">
-            <div class="wrapper contact-grid">
+        <!-- Section Formulaire de Contact & Coordonnées Civiles -->
+        <section class="section contact-section" id="contact" style="border-top: 1px solid var(--color-border);">
+            <div class="container intro-grid" style="align-items: start;">
                 <div>
-                    <span class="section-label">Contact</span>
-                    <h2>Parlez-nous de votre besoin.</h2>
-                    <p>Que vous souhaitiez apprendre une langue, traduire un document, corriger un texte ou recevoir une consultation, notre équipe peut vous orienter.</p>
+                    <span class="section-label">Contact & Inscriptions</span>
+                    <h2>Parlez-nous de votre projet</h2>
+                    <p style="margin-bottom: 2.5rem;">Notre équipe est à votre disposition pour analyser vos besoins et planifier vos sessions d'apprentissage ou de production linguistique.</p>
 
-                    <div class="contact-info">
-                        <p><strong><i class="fa-solid fa-location-dot"></i> Adresse :</strong> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-                        <p><strong><i class="fa-brands fa-whatsapp"></i> WhatsApp :</strong> <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">+509 4838 2252</a></p>
-                        <p><strong><i class="fa-solid fa-envelope"></i> Email :</strong> <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a></p>
+                    <div class="contact-info" style="display: grid; gap: 1.25rem; font-size: 0.95rem;">
+                        <p><strong style="color: var(--color-text);"><i class="fa-solid fa-location-dot" style="color: var(--color-primary); width: 20px;"></i> Adresse :</strong> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                        <p><strong style="color: var(--color-text);"><i class="fa-brands fa-whatsapp" style="color: var(--color-primary); width: 20px;"></i> WhatsApp :</strong> <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 600;">+509 4838 2252</a></p>
+                        <p><strong style="color: var(--color-text);"><i class="fa-solid fa-envelope" style="color: var(--color-primary); width: 20px;"></i> Courriel :</strong> <a href="mailto:gardenoflanguagesandservices@gmail.com" style="color: var(--color-primary); font-weight: 600;">gardenoflanguagesandservices@gmail.com</a></p>
                     </div>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="intro-panel" style="display: grid; gap: 1.25rem;">
                     <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
-                    <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
+                    <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS About Page">
                     <input type="checkbox" name="botcheck" style="display: none;">
 
-                    <div class="form-group">
-                        <label for="name">Nom Complet / Organisation</label>
-                        <input type="text" id="name" name="name" required>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="name" style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Nom Complet / Organisation</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; min-height: 44px; padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); outline: none;">
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Adresse E-mail</label>
-                        <input type="email" id="email" name="email" required>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="email" style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Adresse E-mail</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; min-height: 44px; padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); outline: none;">
                     </div>
                     
-                    <div class="form-group">
-                        <label for="phone">Numéro de Téléphone</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="phone" style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Numéro de Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ..." style="width: 100%; min-height: 44px; padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); outline: none;">
                     </div>
 
-                    <div class="form-group">
-                        <label for="service">Service demandé</label>
-                        <select id="service" name="service" required>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="service" style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Service demandé</label>
+                        <select id="service" name="service" required style="width: 100%; min-height: 44px; padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); outline: none;">
                             <option value="">Choisissez un service</option>
                             <option value="Cours de langues">Cours de langues</option>
                             <option value="Formation technique">Formation technique</option>
@@ -265,335 +279,86 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Expliquez votre besoin..." required></textarea>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="message" style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Votre Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Détaillez vos objectifs ou impératifs de temps..." required style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); outline: none; resize: vertical;"></textarea>
                     </div>
 
-                    <button type="submit">Envoyer la demande</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Transmettre la demande</button>
                 </form>
             </div>
         </section>
         
-        <section class="cta-section">
-            <div class="wrapper cta-box">
+        <!-- Bannière d'Action Rapide WhatsApp -->
+        <section class="section cta-banner" style="padding-top: 0;">
+            <div class="container cta-banner-inner">
                 <div>
                     <h2>Prêt à passer à l'étape suivante ?</h2>
-                    <p>Contactez GOLS aujourd’hui et recevez une orientation adaptée à votre besoin.</p>
+                    <p style="color: rgba(255,255,255,0.8); margin-top: 0.5rem;">Contactez GOLS aujourd’hui et recevez une orientation adaptée à votre besoin.</p>
                 </div>
-                <a href="https://wa.me/50948382252" class="cta-button" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i> Écrire sur WhatsApp
+                <a href="https://wa.me/50948382252" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="background: #fff; color: #01696f !important; font-weight: 700; border: none;">
+                    <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; font-size: 1.1rem;"></i> Écrire sur WhatsApp
                 </a>
             </div>
         </section>
     </main>
 
+    <!-- Pied de Page Institutionnel Unifié -->
     <footer class="site-footer">
-        <div class="wrapper footer-grid">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <h3>GOLS</h3>
+                <h3 class="footer-title">Garden of Languages and Services</h3>
                 <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
-                <p class="address"><i class="fa-solid fa-location-dot"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
+                <address>
+                    <i class="fa-solid fa-location-dot" style="color: var(--color-primary); margin-right: 0.5rem;"></i> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti
+                </address>
             </div>
 
-            <div class="footer-links">
-                <h4>Nos Services</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Nos Services</h4>
                 <a href="courses.html">Cours de langues</a>
                 <a href="courses.html">Formations techniques</a>
-                <a href="translation.html">Traduction de documents</a>
-                <a href="services.html">Relecture et consultation</a>
+                <a href="translation.html">Traduction officielle</a>
+                <a href="services.html">Relecture et révision</a>
             </div>
 
-            <div class="footer-contact">
-                <h4>Contactez-nous</h4>
-                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +509 4838 2252</a>
-                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Nous écrire (GOLS)</a>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Contact Direct</h4>
+                <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Bureau Direct</a>
+                <a href="mailto:gardenoflanguagesandservices@gmail.com"><i class="fa-regular fa-envelope"></i> Secrétariat GOLS</a>
             </div>
 
-            <div class="footer-info">
-                <h4>Légal & Info</h4>
+            <div class="footer-sect">
+                <h4 class="footer-heading">Légal & Info</h4>
                 <a href="about.html">À propos de nous</a>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
-                <a href="terms-of-service.html">Conditions d’utilisation</a>
+                <a href="privacy-policy.html">Confidentialité</a>
+                <a href="terms-of-service.html">Conditions</a>
             </div>
         </div>
 
-        <div class="wrapper footer-bottom">
+        <div class="container footer-bottom">
             <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
         </div>
     </footer>
-</body>
-</html>        </ul>
-      </article>
 
-      <article class="service-card">
-        <div class="service-icon">📄</div>
-        <h3>Traduction de documents</h3>
-        <p>
-          Service de traduction avec expert-traducteur pour vos documents
-          officiels, académiques, administratifs et personnels.
-        </p>
-        <ul>
-          <li>Acte de naissance et acte de mariage</li>
-          <li>Acte de décès et extrait d’archives</li>
-          <li>Diplôme, relevé de notes et divorce</li>
-          <li>Autres documents légaux et académiques</li>
-        </ul>
-      </article>
+    <!-- Script de Synchronisation Persistante Sombre/Clair -->
+    <script>
+        (function () {
+          const root = document.documentElement;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          let savedTheme = localStorage.getItem("gols-theme");
+          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
-      <article class="service-card">
-        <div class="service-icon">✍️</div>
-        <h3>Relecture et correction</h3>
-        <p>
-          Améliorez la clarté, la cohérence et la qualité linguistique de vos
-          textes avec un service de correction approfondie.
-        </p>
-        <ul>
-          <li>Correction grammaticale et orthographique</li>
-          <li>Amélioration du style</li>
-          <li>Révision de documents académiques et professionnels</li>
-        </ul>
-      </article>
+          root.setAttribute("data-theme", theme);
 
-      <article class="service-card">
-        <div class="service-icon">🗣️</div>
-        <h3>Consultation linguistique</h3>
-        <p>
-          Bénéficiez d’un accompagnement personnalisé pour vos projets
-          linguistiques, éducatifs, rédactionnels ou institutionnels.
-        </p>
-        <ul>
-          <li>Conseils linguistiques</li>
-          <li>Accompagnement de projets</li>
-          <li>Communication multilingue</li>
-        </ul>
-      </article>
-
-      <article class="service-card highlighted">
-        <div class="service-icon">🎯</div>
-        <h3>Accompagnement personnalisé</h3>
-        <p>
-          Nous vous aidons à choisir le service, la formation ou le parcours
-          le plus adapté à votre objectif.
-        </p>
-        <a href="#contact" class="card-button">Demander une consultation</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="why-section">
-  <div class="container">
-    <span class="section-label">Pourquoi choisir GOLS ?</span>
-    <h2>Une approche sérieuse, humaine et orientée résultats.</h2>
-
-    <div class="why-grid">
-      <div class="why-item">
-        <h3>Formation pratique</h3>
-        <p>Les cours sont construits autour de compétences directement applicables.</p>
-      </div>
-
-      <div class="why-item">
-        <h3>Accompagnement clair</h3>
-        <p>Chaque apprenant ou client reçoit une orientation adaptée à ses besoins.</p>
-      </div>
-
-      <div class="why-item">
-        <h3>Services professionnels</h3>
-        <p>Les documents sont traités avec rigueur, confidentialité et attention.</p>
-      </div>
-
-      <div class="why-item">
-        <h3>Vision multilingue</h3>
-        <p>GOLS valorise les langues comme outils d’éducation, de mobilité et d’opportunité.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="process-section">
-  <div class="container">
-    <span class="section-label">Comment ça marche ?</span>
-    <h2>Un processus simple et efficace.</h2>
-
-    <div class="process-grid">
-      <div class="process-step">
-        <span>01</span>
-        <h3>Contactez-nous</h3>
-        <p>Envoyez-nous votre demande par WhatsApp, email ou via le formulaire.</p>
-      </div>
-
-      <div class="process-step">
-        <span>02</span>
-        <h3>Présentez votre besoin</h3>
-        <p>Expliquez le service souhaité : cours, traduction, correction ou consultation.</p>
-      </div>
-
-      <div class="process-step">
-        <span>03</span>
-        <h3>Recevez une orientation</h3>
-        <p>Nous vous proposons la solution la plus adaptée à votre objectif.</p>
-      </div>
-
-      <div class="process-step">
-        <span>04</span>
-        <h3>Commencez le service</h3>
-        <p>Vous démarrez votre formation ou votre projet avec un accompagnement clair.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="container cta-box">
-    <div>
-      <h2>Vous avez besoin d’un cours, d’une traduction ou d’un accompagnement linguistique ?</h2>
-      <p>Contactez GOLS aujourd’hui et recevez une orientation adaptée à votre besoin.</p>
-    </div>
-    <a href="https://wa.me/50948382252" class="cta-button" target="_blank" rel="noopener">
-      Écrire sur WhatsApp
-    </a>
-  </div>
-</section>
-
-<section class="faq-section">
-  <div class="container">
-    <span class="section-label">Questions fréquentes</span>
-    <h2>Ce que les clients demandent souvent.</h2>
-
-    <div class="faq-list">
-      <details>
-        <summary>Quels types de documents traduisez-vous ?</summary>
-        <p>
-          Nous traduisons des actes de naissance, actes de mariage, actes de décès,
-          diplômes, relevés de notes, divorces, extraits d’archives et autres documents
-          légaux ou académiques.
-        </p>
-      </details>
-
-      <details>
-        <summary>Quels cours de langues sont disponibles ?</summary>
-        <p>
-          GOLS offre des cours de Créole Haïtien, Français, Espagnol, Anglais et Catalan.
-        </p>
-      </details>
-
-      <details>
-        <summary>Offrez-vous des formations techniques ?</summary>
-        <p>
-          Oui. Nous proposons des formations en intelligence artificielle et en informatique
-          bureautique, notamment Word, Excel et PowerPoint.
-        </p>
-      </details>
-
-      <details>
-        <summary>Comment puis-je m’inscrire ou demander un service ?</summary>
-        <p>
-          Vous pouvez nous contacter par WhatsApp, par email ou via le formulaire de contact.
-        </p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
-  <div class="container contact-grid">
-    <div>
-      <span class="section-label">Contact</span>
-      <h2>Parlez-nous de votre besoin.</h2>
-      <p>
-        Que vous souhaitiez apprendre une langue, traduire un document, corriger un texte
-        ou recevoir une consultation, notre équipe peut vous orienter.
-      </p>
-
-      <div class="contact-info">
-        <p><strong>Adresse :</strong> #10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-        <p><strong>WhatsApp :</strong> <a href="https://wa.me/50948382252">+509 4838 2252</a></p>
-        <p><strong>Email :</strong> <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a></p>
-        <p><strong>Email secondaire :</strong> <a href="mailto:eden26fevrier@gmail.com">eden26fevrier@gmail.com</a></p>
-      </div>
-    </div>
-
-    <form action="https://api.web3forms.com/submit" method="POST">
-                
-                <input type="hidden" name="access_key" value="70437349-69b3-4b43-9014-39366c1aed2e">
-                
-                <input type="hidden" name="subject" value="Nouvelle Demande Client - GOLS">
-                <input type="checkbox" name="botcheck" style="display: none;">
-
-                <div class="form-group">
-                    <label for="name">Nom Complet / Organisation</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Adresse E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Numéro de Téléphone (WhatsApp inclus)</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Ex: +509, +1, +33 ...">
-                </div>
-
-      <label for="service">Service demandé</label>
-      <select id="service" name="service" required>
-        <option value="">Choisissez un service</option>
-        <option value="Cours de langues">Cours de langues</option>
-        <option value="Formation technique">Formation technique</option>
-        <option value="Traduction de documents">Traduction de documents</option>
-        <option value="Relecture et correction">Relecture et correction</option>
-        <option value="Consultation linguistique">Consultation linguistique</option>
-      </select>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Expliquez votre besoin..." required></textarea>
-
-      <button type="submit">Envoyer la demande</button>
-    </form>
-  </div>
-</section>
-            
-
-    </main>
-
- 
-        <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Garden of Languages and Services</h3>
-      <p>Former les esprits • Relier les cultures • Servir avec exellence</p>
-      <p>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti, HT4110</p>
-    </div>
-
-    <div>
-      <h4>Services</h4>
-      <a href="courses.html">Cours de langues</a>
-      <a href="courses.html">Formations techniques</a>
-      <a href="translation.html">Traduction de documents</a>
-      <a href="services.html">Relecture et consultation</a>
-    </div>
-
-    <div>
-      <h4>Contact</h4>
-      <a href="https://wa.me/50948382252" target="_blank">WhatsApp: +509 4838 2252</a>
-      <a href="mailto:gardenoflanguagesandservices@gmail.com">gardenoflanguagesandservices@gmail.com</a>
-      <a href="mailto:eden26fevrier@gmail.com">eden26fevrier@gmail.com</a>
-    </div>
-
-    <div>
-      <h4>Informations</h4>
-      <a href="about.html">À propos</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Politique de confidentialité</a>
-      <a href="terms-of-service.html">Conditions d’utilisation</a>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
-  </div>
-</footer>
-   
+          if (toggle) {
+            toggle.addEventListener("click", function () {
+              theme = theme === "dark" ? "light" : "dark";
+              root.setAttribute("data-theme", theme);
+              localStorage.setItem("gols-theme", theme);
+            });
+          }
+        })();
+    </script>
 </body>
 </html>
