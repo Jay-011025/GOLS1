@@ -124,6 +124,75 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
+.trust-section {
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.trust-card {
+  padding: 28px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.trust-card h3 {
+  color: #123c69;
+  margin-bottom: 10px;
+}
+
+.trust-card p {
+  color: #64748b;
+}
+
+/*testimonials-section*/
+
+.testimonials-section {
+  background: #f1f5f9;
+  padding: 90px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.testimonial-card p {
+  color: #334155;
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-top: 24px;
+}
+
+.testimonial-author strong {
+  display: block;
+  color: #123c69;
+}
+
+.testimonial-author span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
 /* Services */
 .detailed-services {
   background: #f1f5f9;
@@ -371,6 +440,92 @@ summary {
 
 .contact-form button:hover {
   background: #0f2f54;
+}
+
+/*form-note*/
+.form-note {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin-top: 14px;
+}
+
+.form-note a {
+  color: #2a9d8f;
+  font-weight: 700;
+}
+
+/*legal-page*/
+.legal-page {
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.legal-container {
+  max-width: 850px;
+}
+
+.legal-container h1 {
+  color: #123c69;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 16px;
+}
+
+.legal-container h2 {
+  color: #123c69;
+  font-size: 1.35rem;
+  margin-top: 36px;
+}
+
+.legal-container p {
+  color: #475569;
+}
+
+.legal-container a {
+  color: #2a9d8f;
+  font-weight: 700;
+}
+
+/*site-footer*/
+
+.site-footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 60px 0 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
+  gap: 36px;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.site-footer p,
+.site-footer a {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.site-footer a:hover {
+  color: #f4a261;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
 }
 
 /* Footer improvement */
