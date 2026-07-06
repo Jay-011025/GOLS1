@@ -1,109 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cours & Formations | GOLS</title>
-    <meta name="description" content="Découvrez nos cours de langues modernes et formations techniques à Gonaïves.">
-    <link rel="preconnect" href="https://api.fontshare.com">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cours & Formations | GOLS</title>
+  <meta name="description" content="Découvrez les cours de langues et les formations techniques proposés par GOLS à Gonaïves.">
+  <meta name="theme-color" content="#01696f">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&f[]=boska@400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-    <header class="site-header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="Logo GOLS" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
-                <span class="logo-text">GOLS</span>
-            </a>
-            <nav class="nav-links" aria-label="Navigation principale">
-                <a href="index.html">Accueil</a>
-                <a href="about.html">À Propos</a>
-                <a href="services.html">Services</a>
-                <a href="courses.html" class="active" aria-current="page">Cours</a>
-                <a href="translation.html">Traduction</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="https://wa.me/50948382252" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer le thème">◐</button>
-            </div>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Accueil Garden of Languages and Services">
+        <img src="logo.jpg" alt="Logo GOLS" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+        <span class="logo-text">GOLS</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html" class="active" aria-current="page">Cours</a>
+        <a href="translation.html">Traduction</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/50948382252" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Changer le thème" title="Changer le thème">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Introduction -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+          <span class="section-label">Cours & formations</span>
+          <h1 style="margin-block: 1rem 1.5rem;">Des parcours pour développer vos compétences linguistiques et numériques</h1>
+          <p style="font-size: 1.15rem; color: var(--color-text-muted);">
+            GOLS propose des formations structurées pour accompagner les apprenants, les étudiants
+            et les professionnels dans leurs besoins d’apprentissage et de progression.
+          </p>
         </div>
-    </header>
 
-    <main id="main-content">
-        <section class="section">
-            <div class="container">
-                <div style="text-align: center; max-w: 800px; margin: 0 auto 4rem;">
-                    <span class="section-label">Éducation & Compétences</span>
-                    <h1 style="margin-block: 1rem 1.5rem;">Programmes de Formations & Cursus Académiques</h1>
-                    <p style="font-size: 1.15rem; color: var(--color-text-muted);">Développez vos aptitudes linguistiques et techniques avec nos experts.</p>
-                </div>
+        <div class="grid">
+          <article class="card">
+            <p class="card-kicker"><i class="fa-solid fa-language"></i> Formation linguistique</p>
+            <h3>Cours de langues</h3>
+            <p>
+              Des cours adaptés à différents niveaux, avec une attention particulière portée
+              à la compréhension, à l’expression orale, à l’écrit et à l’usage concret de la langue.
+            </p>
 
-                <div class="grid">
-                    <article class="card">
-                        <p class="card-kicker"><i class="fa-solid fa-language"></i> Cursus Moderne</p>
-                        <h3>Cours de Langues</h3>
-                        <p>Des formations adaptées à tous les niveaux (Débutant, Intermédiaire, Avancé) mettant l'accent sur l'expression orale, écrite et la fluidité contextuelle :</p>
-                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; margin-bottom: 1.5rem;">
-                            <li style="border: none; background: none; padding: 0;">Créole Haïtien & Français</li>
-                            <li style="border: none; background: none; padding: 0;">Anglais & Espagnol</li>
-                            <li style="border: none; background: none; padding: 0;">Catalan structural</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">S'inscrire à un cours</a>
-                    </article>
+            <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; margin: 1.5rem 0;">
+              <li style="border: none; background: none; padding: 0;">Créole haïtien</li>
+              <li style="border: none; background: none; padding: 0;">Français</li>
+              <li style="border: none; background: none; padding: 0;">Anglais</li>
+              <li style="border: none; background: none; padding: 0;">Espagnol</li>
+              <li style="border: none; background: none; padding: 0;">Catalan</li>
+            </ul>
 
-                    <article class="card">
-                        <p class="card-kicker"><i class="fa-solid fa-microchip"></i> Compétences d'Avenir</p>
-                        <h3>Formations Techniques</h3>
-                        <p>Prenez une longueur d'avance professionnelle en maîtrisant les outils informatiques et technologiques incontournables :</p>
-                        <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; margin-bottom: 1.5rem;">
-                            <li style="border: none; background: none; padding: 0;">Bureautique (Word, Excel, PowerPoint)</li>
-                            <li style="border: none; background: none; padding: 0;">Initiation à l'Intelligence Artificielle</li>
-                            <li style="border: none; background: none; padding: 0;">Compétences numériques professionnelles</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">Rejoindre la formation</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">Demander des informations</a>
+          </article>
 
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3 class="footer-title">Garden of Languages and Services</h3>
-                <address>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti</address>
-            </div>
-            <div class="footer-sect">
-                <h4 class="footer-heading">Informations utiles</h4>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
-                <a href="terms-of-service.html">Conditions d'utilisation</a>
-            </div>
+          <article class="card">
+            <p class="card-kicker"><i class="fa-solid fa-microchip"></i> Formation technique</p>
+            <h3>Formations techniques</h3>
+            <p>
+              Des apprentissages pratiques pour développer des compétences utiles dans les études,
+              le travail et l’environnement numérique actuel.
+            </p>
+
+            <ul class="hero-points" role="list" style="display: grid; gap: 0.5rem; border: none; padding: 0; margin: 1.5rem 0;">
+              <li style="border: none; background: none; padding: 0;">Bureautique : Word, Excel, PowerPoint</li>
+              <li style="border: none; background: none; padding: 0;">Initiation à l’intelligence artificielle</li>
+              <li style="border: none; background: none; padding: 0;">Compétences numériques professionnelles</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">Rejoindre une formation</a>
+          </article>
         </div>
-        <div class="container footer-bottom">
-            <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
-        </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        (function () {
-          const root = document.documentElement;
-          const toggle = document.querySelector("[data-theme-toggle]");
-          let savedTheme = localStorage.getItem("gols-theme");
-          let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    <!-- Méthode -->
+    <section class="section informative-framework" style="background-color: var(--color-surface-2); border-top: 1px solid var(--color-border);">
+      <div class="container intro-grid">
+        <div class="intro-copy">
+          <span class="section-label">Notre approche pédagogique</span>
+          <h2>Des formations pensées pour la progression réelle</h2>
+          <p>
+            Nos cours et formations sont organisés dans une logique de clarté, de progression
+            et d’application concrète. Chaque parcours vise un apprentissage utile, structuré
+            et adapté au niveau de l’apprenant.
+          </p>
+          <p>
+            Nous accordons une attention particulière à la qualité de l’accompagnement,
+            à la régularité du travail et à la mise en pratique des compétences acquises.
+          </p>
+        </div>
+
+        <div class="intro-panel">
+          <h3 class="intro-panel-title">Ce que nous privilégions</h3>
+          <ul class="hero-points" role="list" style="display: grid; gap: 0.75rem; border: none; padding: 0; width: 100%; margin-top: 1rem;">
+            <li style="border: none; background: none; padding: 0;">Une progression adaptée au niveau</li>
+            <li style="border: none; background: none; padding: 0;">Des contenus utiles et applicables</li>
+            <li style="border: none; background: none; padding: 0;">Un accompagnement sérieux et accessible</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-banner" style="padding-top: 4rem;">
+      <div class="container cta-banner-inner">
+        <div>
+          <h2>Choisissez la formation qui correspond à votre objectif</h2>
+          <p style="color: rgba(255,255,255,0.8); margin-top: 0.5rem;">
+            Contactez-nous pour connaître les modalités d’inscription, les horaires
+            et les prochaines sessions.
+          </p>
+        </div>
+        <a href="contact.html" class="btn btn-secondary" style="background: #fff; color: #01696f !important; font-weight: 700; border: none;">
+          <i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i> Nous contacter
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-title">Garden of Languages and Services</h3>
+        <p>Former les esprits • Relier les cultures • Servir avec excellence</p>
+        <address>#10 Ruelle Linda, Châtelain, Gonaïves, Haïti</address>
+      </div>
+
+      <div class="footer-sect">
+        <h4 class="footer-heading">Nos services</h4>
+        <a href="courses.html">Cours de langues</a>
+        <a href="services.html">Formations techniques</a>
+        <a href="translation.html">Traduction de documents</a>
+      </div>
+
+      <div class="footer-sect">
+        <h4 class="footer-heading">Contact direct</h4>
+        <a href="https://wa.me/50948382252" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:gardenoflanguagesandservices@gmail.com">
+          <i class="fa-regular fa-envelope"></i> Email GOLS
+        </a>
+      </div>
+
+      <div class="footer-sect">
+        <h4 class="footer-heading">Informations utiles</h4>
+        <a href="privacy-policy.html">Politique de confidentialité</a>
+        <a href="terms-of-service.html">Conditions d’utilisation</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Garden of Languages and Services (GOLS). Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector("[data-theme-toggle]");
+      let savedTheme = localStorage.getItem("gols-theme");
+      let theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      root.setAttribute("data-theme", theme);
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          theme = theme === "dark" ? "light" : "dark";
           root.setAttribute("data-theme", theme);
-          if (toggle) {
-            toggle.addEventListener("click", function () {
-              theme = theme === "dark" ? "light" : "dark";
-              root.setAttribute("data-theme", theme);
-              localStorage.setItem("gols-theme", theme);
-            });
-          }
-        })();
-    </script>
+          localStorage.setItem("gols-theme", theme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
