@@ -383,6 +383,59 @@ address {
   color: var(--color-primary);
 }
 
+
+/*langue-switcher*/
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem;
+  border: 1px solid var(--color-border, rgba(1, 105, 111, 0.14));
+  border-radius: 999px;
+  background: var(--color-surface, #ffffff);
+}
+
+.language-switcher a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 36px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text-muted, #64748b);
+  transition: 0.25s ease;
+}
+
+.language-switcher a:hover {
+  background-color: var(--color-primary-soft, rgba(1, 105, 111, 0.08));
+  color: var(--color-primary, #01696f);
+}
+
+.language-switcher a[aria-current="page"] {
+  background-color: var(--color-primary-soft, rgba(1, 105, 111, 0.08));
+  color: var(--color-primary, #01696f);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav-actions {
+    justify-content: flex-start;
+  }
+
+  .language-switcher {
+    order: -1;
+  }
+}
 /* ==========================================================================
    Hero Block Context
    ========================================================================== */
