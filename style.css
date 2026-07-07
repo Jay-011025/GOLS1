@@ -761,3 +761,48 @@ address {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================
+   MENU MOBILE (SMARTPHONES)
+   ========================================= */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  /* Masquer le bouton WhatsApp dans le header sur tout petit écran pour éviter que ça ne soit trop serré */
+  .nav-cta {
+    display: none !important; 
+  }
+
+  /* Afficher le bouton hamburger */
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  /* Transformer la barre de navigation en menu déroulant */
+  .nav-links {
+    display: none; /* Masqué par défaut sur mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 5rem; /* S'ouvre juste en dessous du header */
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-surface);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    gap: 1.5rem;
+  }
+
+  /* Classe ajoutée par JavaScript pour ouvrir le menu */
+  .nav-links.is-open {
+    display: flex;
+  }
+}
