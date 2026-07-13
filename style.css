@@ -806,3 +806,10 @@ address {
     display: flex;
   }
 }
+
+/* Ajout pour l'animation du bouton de dépôt */
+.card a[target="_blank"]:hover {
+    transform: scale(1.05);
+    background-color: #059669; /* Une nuance d'émeraude plus foncée */
+    cursor: pointer;
+}
