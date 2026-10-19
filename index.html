@@ -13,7 +13,7 @@
   <meta property="og:title" content="GOLS | Garden of Languages and Services">
   <meta
     property="og:description"
-    content="Traduction de documents, cours de langues et accompagnement linguistique."
+    content="Traduction, cours de langues et accompagnement linguistique pour particuliers, professionnels et institutions."
   >
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_HT">
@@ -34,7 +34,6 @@
       --primary: #01696f;
       --primary-hover: #004d52;
       --primary-alpha: rgba(1, 105, 111, 0.06);
-      --accent: #b45309;
       --radius-sm: 8px;
       --radius-md: 16px;
       --radius-lg: 24px;
@@ -54,7 +53,6 @@
       --primary: #02939c;
       --primary-hover: #38bdf8;
       --primary-alpha: rgba(2, 147, 156, 0.1);
-      --accent: #fbbf24;
       --shadow-sm: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
       --shadow-md: 0 12px 40px -4px rgba(0, 0, 0, 0.5);
       --hero-gradient: radial-gradient(circle at 85% 20%, rgba(2, 147, 156, 0.1) 0%, rgba(9, 14, 23, 0) 65%);
@@ -77,7 +75,7 @@
       padding: 0 2rem;
     }
 
-    h1, h2, h3, .serif-font {
+    h1, h2, h3 {
       font-family: 'Boska', serif;
       color: var(--text-primary);
       font-weight: 700;
@@ -111,7 +109,6 @@
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
       z-index: 100;
-      transition: background-color 0.4s, border-color 0.4s;
     }
 
     .nav-container {
@@ -138,7 +135,6 @@
     .logo-text {
       font-weight: 700;
       font-size: 1.1rem;
-      letter-spacing: -0.3px;
       color: var(--text-primary);
     }
 
@@ -231,22 +227,15 @@
       justify-content: center;
       cursor: pointer;
       font-size: 1.1rem;
-      transition: all 0.3s;
-    }
-
-    .theme-toggle:hover {
-      background-color: var(--primary-alpha);
-      border-color: var(--primary);
     }
 
     .hero {
-      position: relative;
       background: var(--hero-gradient);
       padding: 8rem 0 6rem;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 860px;
       margin: 0 auto;
       text-align: center;
     }
@@ -257,28 +246,19 @@
       letter-spacing: 2px;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .hero h1 {
       font-size: clamp(2.5rem, 6vw, 4rem);
-      line-height: 1.1;
       margin-bottom: 1.5rem;
-      letter-spacing: -0.5px;
-    }
-
-    .hero h1 .highlight {
-      font-style: italic;
-      color: var(--primary);
-      font-weight: 400;
+      letter-spacing: -0.4px;
     }
 
     .hero-text {
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      color: var(--text-secondary);
-      max-width: 680px;
-      margin: 0 auto 3rem;
-      font-weight: 400;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
     }
 
     .hero-actions {
@@ -286,7 +266,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 1rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
     @media (min-width: 540px) {
@@ -298,7 +278,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.5rem 2rem;
       border-top: 1px solid var(--border);
       padding-top: 2rem;
     }
@@ -306,16 +286,7 @@
     .hero-points li {
       font-size: 0.95rem;
       font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
       color: var(--text-primary);
-    }
-
-    .hero-points li::before {
-      content: "•";
-      color: var(--primary);
-      font-size: 1.4rem;
     }
 
     .section {
@@ -334,8 +305,8 @@
 
     .section-title {
       font-size: clamp(2rem, 4vw, 2.7rem);
-      max-width: 750px;
-      margin-bottom: 3.5rem;
+      max-width: 760px;
+      margin-bottom: 2rem;
     }
 
     .intro-grid {
@@ -346,20 +317,15 @@
 
     @media (min-width: 768px) {
       .intro-grid {
-        grid-template-columns: 1.4fr 1fr;
-        gap: 5rem;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 4rem;
         align-items: center;
       }
     }
 
-    .intro-copy h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-    }
-
     .intro-copy p:not(.section-label) {
-      font-size: 1.1rem;
-      color: var(--text-secondary);
+      font-size: 1.08rem;
+      max-width: 65ch;
     }
 
     .grid {
@@ -371,12 +337,12 @@
     .card {
       background-color: var(--bg-surface);
       border: 1px solid var(--border);
-      padding: 3rem 2.5rem;
+      padding: 2.5rem 2rem;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.35s ease;
     }
 
     .card:hover {
@@ -391,23 +357,22 @@
       letter-spacing: 1px;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 1rem;
+      margin-bottom: 0.9rem;
     }
 
     .card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.45rem;
+      margin-bottom: 0.9rem;
     }
 
     .card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      margin-bottom: 2rem;
+      font-size: 0.96rem;
+      margin-bottom: 1.8rem;
       flex-grow: 1;
     }
 
     .card-link {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 700;
       color: var(--text-primary);
       display: inline-flex;
@@ -417,12 +382,31 @@
 
     .card-link::after {
       content: "→";
-      transition: transform 0.3s;
     }
 
-    .card:hover .card-link::after {
-      transform: translateX(4px);
-      color: var(--primary);
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .two-col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .info-block {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-block h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
     }
 
     .cta-banner {
@@ -445,7 +429,6 @@
 
     .cta-banner h2 {
       font-size: 2rem;
-      margin-top: 0.5rem;
       max-width: 620px;
     }
 
@@ -458,16 +441,16 @@
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 3.5rem;
+      gap: 3rem;
       margin-bottom: 4rem;
     }
 
     @media (min-width: 768px) {
-      .footer-grid { grid-template-columns: 1.5fr repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
     }
 
     .footer-title {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       margin-bottom: 0.75rem;
     }
 
@@ -482,13 +465,13 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       color: var(--text-primary);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
 
     .footer-grid section a {
       display: block;
       font-size: 0.9rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
       color: var(--text-secondary);
     }
 
@@ -569,48 +552,43 @@
   <main id="main-content">
     <section class="hero">
       <div class="container hero-content">
-        <p class="hero-eyebrow">Traduction, cours de langues et accompagnement linguistique</p>
+        <p class="hero-eyebrow">Garden of Languages and Services LLC</p>
 
-        <h1>
-          Des services linguistiques adaptés à vos
-          <span class="highlight">besoins personnels et professionnels.</span>
-        </h1>
+        <h1>GOLS propose des services de traduction, des cours de langues et un accompagnement linguistique.</h1>
 
         <p class="hero-text">
-          GOLS accompagne les particuliers, les professionnels et les institutions avec des services de traduction, des cours de langues et un accompagnement linguistique clair, rigoureux et adapté à chaque besoin.
+          Nous accompagnons les particuliers, les professionnels et les institutions avec des services clairs, rigoureux et adaptés à leurs besoins académiques, administratifs et professionnels.
         </p>
 
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary">Demander un devis</a>
-          <a href="services.html" class="btn btn-secondary">Découvrir nos services</a>
+          <a href="services.html" class="btn btn-secondary">Voir nos services</a>
         </div>
 
         <ul class="hero-points" role="list">
           <li>Traduction de documents</li>
           <li>Cours de langues</li>
-          <li>Relecture et révision</li>
+          <li>Relecture et accompagnement linguistique</li>
         </ul>
       </div>
     </section>
 
-    <section class="intro section">
+    <section class="section">
       <div class="container intro-grid">
         <div class="intro-copy">
-          <p class="section-label">Notre approche</p>
-          <h2>Une approche rigoureuse et adaptée à chaque demande.</h2>
+          <p class="section-label">Présentation</p>
+          <h2>GOLS est une structure de services linguistiques destinée aux particuliers, aux professionnels et aux institutions.</h2>
           <p>
-            Chaque demande est étudiée avec attention afin de proposer un service pertinent, soigné et confidentiel, en fonction du contexte, du type de document ou de l’objectif visé.
+            Notre travail couvre la traduction de documents, l’enseignement des langues et l’accompagnement linguistique. Chaque demande est traitée avec attention afin d’apporter une réponse claire, soignée et adaptée à son contexte.
           </p>
         </div>
 
-        <div>
-          <div class="card" style="padding: 2rem;">
-            <p class="card-kicker">Méthode</p>
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Clarté et suivi</h3>
-            <p style="margin-bottom: 0;">
-              Une communication simple, une attention à la cohérence du texte et un suivi sérieux à chaque étape du travail.
-            </p>
-          </div>
+        <div class="info-block">
+          <p class="card-kicker">Ce que nous faisons</p>
+          <h3>Des services utiles, précis et accessibles</h3>
+          <p>
+            Nous intervenons sur des besoins concrets : traduction de documents, amélioration de textes, appui linguistique et cours structurés selon les objectifs du client ou de l’apprenant.
+          </p>
         </div>
       </div>
     </section>
@@ -618,14 +596,14 @@
     <section class="services-preview section">
       <div class="container">
         <p class="section-label">Nos services</p>
-        <h2 class="section-title">Nos principaux services</h2>
+        <h2 class="section-title">Les principaux services proposés par GOLS</h2>
 
         <div class="grid">
           <article class="card">
             <p class="card-kicker">Traduction</p>
             <h3>Traduction de documents</h3>
             <p>
-              Traduction de documents administratifs, académiques et professionnels, avec une attention particulière à l’exactitude et à la confidentialité.
+              Traduction de documents administratifs, académiques et professionnels avec une attention particulière à la clarté, à l’exactitude et à la confidentialité.
             </p>
             <a href="translation.html" class="card-link">Demander une traduction</a>
           </article>
@@ -634,16 +612,16 @@
             <p class="card-kicker">Cours</p>
             <h3>Cours de langues</h3>
             <p>
-              Des cours structurés pour développer vos compétences linguistiques en fonction de vos objectifs personnels, académiques ou professionnels.
+              Des cours conçus pour développer les compétences linguistiques selon des objectifs personnels, académiques ou professionnels.
             </p>
             <a href="courses.html" class="card-link">Découvrir les cours</a>
           </article>
 
           <article class="card">
-            <p class="card-kicker">Révision</p>
+            <p class="card-kicker">Accompagnement</p>
             <h3>Accompagnement linguistique</h3>
             <p>
-              Relecture, correction et amélioration de textes pour renforcer la clarté, la cohérence et la qualité de vos communications.
+              Relecture, correction et amélioration de textes pour renforcer la qualité, la cohérence et la lisibilité de vos communications.
             </p>
             <a href="accompagnement.html" class="card-link">Découvrir ce service</a>
           </article>
@@ -651,12 +629,59 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Pour qui</p>
+        <h2 class="section-title">Des services pensés pour différents besoins</h2>
+
+        <div class="two-col">
+          <div class="info-block">
+            <h3>Particuliers et apprenants</h3>
+            <p>
+              Pour les personnes qui ont besoin d’un cours de langues, d’une aide à la rédaction ou de la traduction d’un document personnel ou scolaire.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h3>Professionnels et institutions</h3>
+            <p>
+              Pour les structures et les professionnels qui recherchent un appui linguistique fiable pour leurs documents, leurs contenus ou leurs besoins de communication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Pourquoi GOLS</p>
+        <h2 class="section-title">Une approche fondée sur la rigueur, la clarté et le suivi</h2>
+
+        <div class="two-col">
+          <div class="info-block">
+            <h3>Clarté du service</h3>
+            <p>
+              Chaque demande est examinée selon son objectif, son type de contenu et son contexte d’usage afin de proposer une réponse adaptée.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h3>Sérieux dans l’exécution</h3>
+            <p>
+              Nous accordons une attention particulière à la qualité du texte, à la cohérence terminologique, à la confidentialité et à la communication tout au long du travail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-banner section">
       <div class="container cta-banner-inner">
         <div>
-          <p class="section-label">Besoin d’un service précis ?</p>
-          <h2>Contactez GOLS pour une traduction, un cours de langues ou un accompagnement linguistique.</h2>
+          <p class="section-label">Prendre contact</p>
+          <h2>Contactez GOLS pour discuter de votre besoin ou demander un devis.</h2>
         </div>
+
         <a
           href="https://wa.me/50948382252"
           class="btn btn-primary"
